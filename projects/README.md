@@ -1,5 +1,5 @@
 ## Depreciated 
-Files that were used in the past. These should not be used in comissioning, Only for log/education purposes
+Flows that were used in the past. These should not be used in comissioning, Only for log/education purposes
 
 ## IoT Gateway API
 From Bosch Rexroth Gateway Software to influxDB
