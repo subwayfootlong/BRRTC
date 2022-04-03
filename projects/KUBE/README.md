@@ -29,15 +29,21 @@ Follow the [setup guide](https://www.kube-iot.com/support). Its pretty self expl
 ## node-red
    Accessed on localhost:1880. PR43 will return "cannot GET/" so use (PR43IP):1880
    
-   There are 3 nodes. DO NOT TOUCH FORMATTER unless you know what you are doing.
+   There are 5 nodes. DO NOT TOUCH FORMATTER unless you know what you are doing.
 
-   1. IoT Gateway Input 1 (MQTT Subscribe node)
+   1. Subscribe to a Sensor (MQTT Subscribe node)
       | Required Feilds | Inputs |
       | ----------- | ----------- |
       | Server | localhost |
       | Port | 1883 |
       | Topic | (KUBEGWName)(SensorMacID) |
-   2. influxDB Batch
+   2. Change Measurement Name (Change Node)
+      Change Sensor 1 to your sensor name. I like to change it to the part I attached the sensor to e.g. Motor X
+   3. Variable Deleter (Function Node)
+      This node deletes variables that dont need to be stored into influxDB to be efficient
+   4. Formatter (Change Node)
+      DO NOT TOUCH this node unless you know what you are doing
+   6. influxDB Batch
       | Required Feilds | Inputs |
       | ----------- | ----------- |
       | Version | 2.0 |
@@ -45,8 +51,8 @@ Follow the [setup guide](https://www.kube-iot.com/support). Its pretty self expl
       | Token | (FROM INFLUXDB) |
       | Organization | Initial_Organization |
       | Bucket | (MachineName) |
-   3. Create a new flow and insert the Aedes broker. You can use the Mosquitto broker snap but I find using that limiting and cumbersome.
-      
+
+Create a new flow and insert the Aedes broker. You can use the Mosquitto broker snap but I find using that limiting and cumbersome.      
 ## InfluxDB
    Accessed on localhost:8086
    
@@ -60,7 +66,6 @@ Follow the [setup guide](https://www.kube-iot.com/support). Its pretty self expl
    3. Create a new bucket with your Machine name from data(side tab)>buckets
    4. Use data explorer to view your data
    5. Use Boards to create Dashboards
-
 ## Remarks
 Now you're all done!
 
