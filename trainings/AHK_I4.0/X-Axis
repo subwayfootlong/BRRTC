@@ -1,0 +1,25 @@
+[
+    {
+        "id": "92d30085.646fd",
+        "type": "mysql",
+        "z": "b637a777.253088",
+        "mydb": "c47c557.35673a8",
+        "name": "",
+        "x": 1100,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c47c557.35673a8",
+        "type": "MySQLdatabase",
+        "z": "",
+        "name": "",
+        "host": "localhost",
+        "port": "3307",
+        "db": "task3_ianwowongan",
+        "tz": "",
+        "charset": "UTF8"
+    }
+]

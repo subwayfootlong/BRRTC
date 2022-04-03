@@ -1,0 +1,266 @@
+[
+    {
+        "id": "bcb7b24b.d8199",
+        "type": "tab",
+        "label": "Magazine Status and airflow_ai",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "b4890727.e6e588",
+        "type": "inject",
+        "z": "bcb7b24b.d8199",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "ns=2;s=Application.EA_SPS.E_S_level_SM1_ok",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a844dd33.2c69d",
+        "type": "OpcUa-Client",
+        "z": "bcb7b24b.d8199",
+        "endpoint": "35091474.e2ce8c",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "name": "",
+        "x": 320,
+        "y": 180,
+        "wires": [
+            [
+                "abfffb41.9f12",
+                "c8f2e82b.4dbb38"
+            ]
+        ]
+    },
+    {
+        "id": "abfffb41.9f12",
+        "type": "debug",
+        "z": "bcb7b24b.d8199",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c8f2e82b.4dbb38",
+        "type": "function",
+        "z": "bcb7b24b.d8199",
+        "name": "",
+        "func": "if(msg.payload)\n    {msg.payload='Magazine 1 is loaded'}\nelse \n    {msg.payload='Magazine 1 is empty'}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 600,
+        "y": 180,
+        "wires": [
+            [
+                "6e7a688e.fce3b"
+            ]
+        ]
+    },
+    {
+        "id": "6e7a688e.fce3b",
+        "type": "debug",
+        "z": "bcb7b24b.d8199",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "fc67ae23.d0422",
+        "type": "mysql",
+        "z": "bcb7b24b.d8199",
+        "mydb": "c47c557.35673a8",
+        "name": "",
+        "x": 840,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7765f3a9.bf0d5c",
+        "type": "inject",
+        "z": "bcb7b24b.d8199",
+        "name": "",
+        "props": [
+            {
+                "p": "time",
+                "v": "",
+                "vt": "date"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "ns=2;s=Application.DeviceSets.wAirflow_ai",
+        "x": 110,
+        "y": 380,
+        "wires": [
+            [
+                "149fc0a2.3fffa7",
+                "b853cb54.18877"
+            ]
+        ]
+    },
+    {
+        "id": "b853cb54.18877",
+        "type": "function",
+        "z": "bcb7b24b.d8199",
+        "name": "",
+        "func": "dateObj=new Date(msg.time+(8*60*60*1000));\nutcString=dateObj.toUTCString();\ntime=utcString.slice(-12);\nmysqltime='\"'+time+'\"';\nmsg.topic='INSERT INTO airflow_current_nodered(airflow_ai, timestamp) VALUES ('+msg.payload+','+mysqltime+')';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 280,
+        "wires": [
+            [
+                "66c9693d.d6982",
+                "fc67ae23.d0422"
+            ]
+        ]
+    },
+    {
+        "id": "149fc0a2.3fffa7",
+        "type": "OpcUa-Client",
+        "z": "bcb7b24b.d8199",
+        "endpoint": "35091474.e2ce8c",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "name": "",
+        "x": 320,
+        "y": 380,
+        "wires": [
+            [
+                "5a48c551.ba396c",
+                "b853cb54.18877"
+            ]
+        ]
+    },
+    {
+        "id": "5a48c551.ba396c",
+        "type": "debug",
+        "z": "bcb7b24b.d8199",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "66c9693d.d6982",
+        "type": "debug",
+        "z": "bcb7b24b.d8199",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "a5a23529.d92c7",
+        "type": "template",
+        "z": "bcb7b24b.d8199",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is the payload: {{payload}} !",
+        "output": "str",
+        "x": 550,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "35091474.e2ce8c",
+        "type": "OpcUa-Endpoint",
+        "z": "",
+        "endpoint": "opc.tcp://192.168.1.10:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "login": false
+    },
+    {
+        "id": "c47c557.35673a8",
+        "type": "MySQLdatabase",
+        "z": "",
+        "name": "",
+        "host": "localhost",
+        "port": "3307",
+        "db": "task3_ianwowongan",
+        "tz": "",
+        "charset": "UTF8"
+    }
+]

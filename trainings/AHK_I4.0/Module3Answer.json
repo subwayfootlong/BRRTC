@@ -1,0 +1,489 @@
+[
+    {
+        "id": "e51a173a.121448",
+        "type": "tab",
+        "label": "MMS Station 2 Visualisation",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "72630616.8eb038",
+        "type": "group",
+        "z": "e51a173a.121448",
+        "name": "Line Chart Alternative",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "fill": "#3f93cf",
+            "color": "#000000"
+        },
+        "nodes": [
+            "9411c60d.179f58",
+            "42a39b4a.5facf4",
+            "9ceab695.141678",
+            "d58fc3b0.f553a",
+            "389aee2f.3434b2"
+        ],
+        "x": 124,
+        "y": 439,
+        "w": 952,
+        "h": 142
+    },
+    {
+        "id": "7bcf61ac.ef03b",
+        "type": "group",
+        "z": "e51a173a.121448",
+        "name": "Line Chart German Way",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#7fb7df",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "2bccb6ea.b66aea",
+            "7f37e08d.1d77",
+            "eea8cd74.b8ba1",
+            "a8585d48.d7957",
+            "948b9ef0.710f2",
+            "447719ac.8c8228"
+        ],
+        "x": 114,
+        "y": 239,
+        "w": 1002,
+        "h": 182
+    },
+    {
+        "id": "e1dcfe73.9ea",
+        "type": "group",
+        "z": "e51a173a.121448",
+        "name": "Gauge",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "fill": "#c8e7a7",
+            "color": "#000000"
+        },
+        "nodes": [
+            "c7387837.809c48",
+            "42c0ecf7.6acb44",
+            "feae4e29.120fb",
+            "8f9f4668.53d5e8"
+        ],
+        "x": 104,
+        "y": 79,
+        "w": 712,
+        "h": 142
+    },
+    {
+        "id": "c7387837.809c48",
+        "type": "mysql",
+        "z": "e51a173a.121448",
+        "g": "e1dcfe73.9ea",
+        "mydb": "37ce31b.cfa34ce",
+        "name": "",
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "feae4e29.120fb",
+                "8f9f4668.53d5e8"
+            ]
+        ]
+    },
+    {
+        "id": "feae4e29.120fb",
+        "type": "debug",
+        "z": "e51a173a.121448",
+        "g": "e1dcfe73.9ea",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "42c0ecf7.6acb44",
+        "type": "inject",
+        "z": "e51a173a.121448",
+        "g": "e1dcfe73.9ea",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT air_flow FROM air_flow_sensor_table ORDER BY id DESC LIMIT 1",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 180,
+        "wires": [
+            [
+                "c7387837.809c48"
+            ]
+        ]
+    },
+    {
+        "id": "8f9f4668.53d5e8",
+        "type": "ui_gauge",
+        "z": "e51a173a.121448",
+        "g": "e1dcfe73.9ea",
+        "name": "",
+        "group": "db44ede6.b64dd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Air Flow Gauge",
+        "label": "NI/min",
+        "format": "{{payload[0].air_flow}} ",
+        "min": 0,
+        "max": "3",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 710,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "2bccb6ea.b66aea",
+        "type": "mysql",
+        "z": "e51a173a.121448",
+        "g": "7bcf61ac.ef03b",
+        "mydb": "37ce31b.cfa34ce",
+        "name": "",
+        "x": 590,
+        "y": 280,
+        "wires": [
+            [
+                "eea8cd74.b8ba1",
+                "a8585d48.d7957"
+            ]
+        ]
+    },
+    {
+        "id": "7f37e08d.1d77",
+        "type": "function",
+        "z": "e51a173a.121448",
+        "g": "7bcf61ac.ef03b",
+        "name": "",
+        "func": "var date = new Date();\nvar compareDate = date.getTime() +( (date.getTimezoneOffset() * 60000)-1000*60);\nmsg.topic = 'SELECT air_flow,timestamp FROM air_flow_sensor_table WHERE timestamp >= FROM_UNIXTIME(' + compareDate/1000 + ')';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 280,
+        "wires": [
+            [
+                "2bccb6ea.b66aea"
+            ]
+        ]
+    },
+    {
+        "id": "eea8cd74.b8ba1",
+        "type": "change",
+        "z": "e51a173a.121448",
+        "g": "7bcf61ac.ef03b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[{\t\"series\": [“air_flow\"],\t\"data\": [\t    [payload.{\"x\": timestamp, \"y\": air_flow }\t    ]\t],\t\"labels\": [\"\"]\t}]\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 280,
+        "wires": [
+            [
+                "447719ac.8c8228"
+            ]
+        ]
+    },
+    {
+        "id": "a8585d48.d7957",
+        "type": "debug",
+        "z": "e51a173a.121448",
+        "g": "7bcf61ac.ef03b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "948b9ef0.710f2",
+        "type": "inject",
+        "z": "e51a173a.121448",
+        "g": "7bcf61ac.ef03b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 280,
+        "wires": [
+            [
+                "7f37e08d.1d77"
+            ]
+        ]
+    },
+    {
+        "id": "447719ac.8c8228",
+        "type": "ui_chart",
+        "z": "e51a173a.121448",
+        "g": "7bcf61ac.ef03b",
+        "name": "",
+        "group": "db44ede6.b64dd",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Air flow line chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "3",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1000,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9411c60d.179f58",
+        "type": "mysql",
+        "z": "e51a173a.121448",
+        "g": "72630616.8eb038",
+        "mydb": "37ce31b.cfa34ce",
+        "name": "",
+        "x": 470,
+        "y": 540,
+        "wires": [
+            [
+                "9ceab695.141678",
+                "389aee2f.3434b2"
+            ]
+        ]
+    },
+    {
+        "id": "42a39b4a.5facf4",
+        "type": "inject",
+        "z": "e51a173a.121448",
+        "g": "72630616.8eb038",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT air_flow,timestamp FROM air_flow_sensor_table ORDER BY id DESC LIMIT 10",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 540,
+        "wires": [
+            [
+                "9411c60d.179f58"
+            ]
+        ]
+    },
+    {
+        "id": "9ceab695.141678",
+        "type": "debug",
+        "z": "e51a173a.121448",
+        "g": "72630616.8eb038",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "d58fc3b0.f553a",
+        "type": "ui_chart",
+        "z": "e51a173a.121448",
+        "g": "72630616.8eb038",
+        "name": "",
+        "group": "db44ede6.b64dd",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Air flow line chart_alternative",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "3",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 930,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "389aee2f.3434b2",
+        "type": "change",
+        "z": "e51a173a.121448",
+        "g": "72630616.8eb038",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[{\t\"series\": [“air_flow\"],\t\"data\": [\t    [payload.{\"x\": timestamp, \"y\": air_flow }\t    ]\t],\t\"labels\": [\"\"]\t}]\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 540,
+        "wires": [
+            [
+                "d58fc3b0.f553a"
+            ]
+        ]
+    },
+    {
+        "id": "37ce31b.cfa34ce",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3307",
+        "db": "ahk_example",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "db44ede6.b64dd",
+        "type": "ui_group",
+        "name": "AHK_Example",
+        "tab": "5ab4b91f.fbf728",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "5ab4b91f.fbf728",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
