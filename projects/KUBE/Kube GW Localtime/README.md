@@ -1,7 +1,7 @@
 This folder includes a new function that uses the KUBE gateway timestamp instead of the server timestamp to achive higher resolution of data.
 
 # WARNING
-This flow is UNSTABLE! If you turn off the Kube GW, it will reset its time as it does not have a [RTC!](https://en.wikipedia.org/wiki/Real-time_clock). The data will be backlogged and sent to a date when the OS was installed!
+This flow is UNSTABLE! If you turn off the Kube GW, it will reset its time as it does not have a [RTC!](https://en.wikipedia.org/wiki/Real-time_clock). The data will be backlogged as the date will be set to when the OS was installed!
 
 # How to use
 There are two possible ways that you can use this
