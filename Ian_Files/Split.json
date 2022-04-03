@@ -1,0 +1,166 @@
+[
+    {
+        "id": "230006a0.437b22",
+        "type": "tab",
+        "label": "Split",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "35a72cfa.29260c",
+        "type": "switch",
+        "z": "230006a0.437b22",
+        "name": "",
+        "property": "type",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "Humidity",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "Temperature",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 3,
+        "x": 650,
+        "y": 220,
+        "wires": [
+            [
+                "544fa631.eeeed"
+            ],
+            [
+                "1b997347.25aafd"
+            ],
+            [
+                "ef6a868e.b54d4"
+            ]
+        ]
+    },
+    {
+        "id": "3801fe55.4784d2",
+        "type": "inject",
+        "z": "230006a0.437b22",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "Humidity:45",
+        "payloadType": "str",
+        "x": 299.9999771118164,
+        "y": 204.00000381469727,
+        "wires": [
+            [
+                "f793407f.51baa"
+            ]
+        ]
+    },
+    {
+        "id": "871dca17.9868e",
+        "type": "inject",
+        "z": "230006a0.437b22",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "Temperature:23",
+        "payloadType": "str",
+        "x": 323.4999771118164,
+        "y": 262.6666145324707,
+        "wires": [
+            [
+                "f793407f.51baa"
+            ]
+        ]
+    },
+    {
+        "id": "f793407f.51baa",
+        "type": "function",
+        "z": "230006a0.437b22",
+        "name": "Split",
+        "func": "var fields = msg.payload.trim().split(':');\nmsg.type     = fields[0];\nmsg.value    = parseInt(fields[1]);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 490,
+        "y": 200,
+        "wires": [
+            [
+                "35a72cfa.29260c"
+            ]
+        ]
+    },
+    {
+        "id": "544fa631.eeeed",
+        "type": "debug",
+        "z": "230006a0.437b22",
+        "name": "Humidity",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "complete": "value",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1b997347.25aafd",
+        "type": "debug",
+        "z": "230006a0.437b22",
+        "name": "Temperature",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "complete": "value",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 843.4999618530273,
+        "y": 248.6666145324707,
+        "wires": []
+    },
+    {
+        "id": "ef6a868e.b54d4",
+        "type": "debug",
+        "z": "230006a0.437b22",
+        "name": "Other",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "complete": "value",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 300,
+        "wires": []
+    }
+]

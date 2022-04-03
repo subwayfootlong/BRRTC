@@ -1,0 +1,844 @@
+[
+    {
+        "id": "f5bda1b0e9e63b8e",
+        "type": "tab",
+        "label": "IoTGateway API Performance",
+        "disabled": false,
+        "info": "# This flow enables data to be sent from IoT Gateway to influxDB\n * Just configure the MQTT nodes to your IoT Gateway MQTT output\n * Configure the InfluxDB output to your databse"
+    },
+    {
+        "id": "8ffb1744451cd7c5",
+        "type": "group",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#92d04f",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "3917b99b70ada50f",
+            "b83d9ae4677c7236",
+            "3d40a59ec5e9f405",
+            "3ca0da965c2f7c88",
+            "4658c275592a7392",
+            "2a115d66c4d2ab22",
+            "08fcdac0d87e2e99",
+            "39326d5e0b6c4342",
+            "f4b89a391ff09285",
+            "d3b474c39b3c9cb6",
+            "cbf79ee08f869dc2",
+            "a75c89695f775bfb",
+            "895f628ac5637fe2",
+            "80ee2637b03e9214",
+            "ebd3378a23d8e3af",
+            "d1d2454ab861511c"
+        ],
+        "x": 194,
+        "y": 19,
+        "w": 215,
+        "h": 683
+    },
+    {
+        "id": "fb7d5db3db952487",
+        "type": "influxdb batch",
+        "z": "f5bda1b0e9e63b8e",
+        "influxdb": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "Initial_Organization",
+        "bucket": "Testing",
+        "x": 580,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "30bc90c79d5f8701",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input 1",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 90,
+        "y": 60,
+        "wires": [
+            [
+                "3917b99b70ada50f"
+            ]
+        ]
+    },
+    {
+        "id": "f864f62cc5574bac",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input 2",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 90,
+        "y": 100,
+        "wires": [
+            [
+                "b83d9ae4677c7236"
+            ]
+        ]
+    },
+    {
+        "id": "3917b99b70ada50f",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 60,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "b83d9ae4677c7236",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 303,
+        "y": 101,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "a1e1d21a02622f8a",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input 3",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "3d40a59ec5e9f405"
+            ]
+        ]
+    },
+    {
+        "id": "372da43de4d61884",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input 4",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 90,
+        "y": 180,
+        "wires": [
+            [
+                "3ca0da965c2f7c88"
+            ]
+        ]
+    },
+    {
+        "id": "3d40a59ec5e9f405",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 140,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "3ca0da965c2f7c88",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 303,
+        "y": 181,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "af43fa92a53f8c69",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input 5",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 90,
+        "y": 220,
+        "wires": [
+            [
+                "4658c275592a7392"
+            ]
+        ]
+    },
+    {
+        "id": "93d634a001baa2d9",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input 6",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 90,
+        "y": 260,
+        "wires": [
+            [
+                "2a115d66c4d2ab22"
+            ]
+        ]
+    },
+    {
+        "id": "4658c275592a7392",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 220,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "2a115d66c4d2ab22",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 303,
+        "y": 261,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "f59f4273e95e837d",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input 7",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 90,
+        "y": 300,
+        "wires": [
+            [
+                "08fcdac0d87e2e99"
+            ]
+        ]
+    },
+    {
+        "id": "4e28cf922b8bc2ce",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input 8",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 90,
+        "y": 340,
+        "wires": [
+            [
+                "39326d5e0b6c4342"
+            ]
+        ]
+    },
+    {
+        "id": "08fcdac0d87e2e99",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 300,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "39326d5e0b6c4342",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 303,
+        "y": 341,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "c73cd6749607d2fa",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input 9",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 90,
+        "y": 380,
+        "wires": [
+            [
+                "f4b89a391ff09285"
+            ]
+        ]
+    },
+    {
+        "id": "a5650f6368ca3e03",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input 10",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 100,
+        "y": 420,
+        "wires": [
+            [
+                "d3b474c39b3c9cb6"
+            ]
+        ]
+    },
+    {
+        "id": "0831c3e8c83bb15b",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input  11 ",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 90,
+        "y": 460,
+        "wires": [
+            [
+                "cbf79ee08f869dc2"
+            ]
+        ]
+    },
+    {
+        "id": "0c4206553cb2ad38",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input 12",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 100,
+        "y": 500,
+        "wires": [
+            [
+                "a75c89695f775bfb"
+            ]
+        ]
+    },
+    {
+        "id": "858cd74798e84e36",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input 13",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 100,
+        "y": 540,
+        "wires": [
+            [
+                "895f628ac5637fe2"
+            ]
+        ]
+    },
+    {
+        "id": "98f22fa760cdef7e",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input 14",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 100,
+        "y": 580,
+        "wires": [
+            [
+                "80ee2637b03e9214"
+            ]
+        ]
+    },
+    {
+        "id": "84e5516f382d48a4",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input 15",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 100,
+        "y": 620,
+        "wires": [
+            [
+                "ebd3378a23d8e3af"
+            ]
+        ]
+    },
+    {
+        "id": "1639f74dd8ab5306",
+        "type": "mqtt in",
+        "z": "f5bda1b0e9e63b8e",
+        "name": "Input 16",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 100,
+        "y": 660,
+        "wires": [
+            [
+                "d1d2454ab861511c"
+            ]
+        ]
+    },
+    {
+        "id": "f4b89a391ff09285",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 380,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "d3b474c39b3c9cb6",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 303,
+        "y": 421,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "cbf79ee08f869dc2",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 460,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "a75c89695f775bfb",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 303,
+        "y": 501,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "895f628ac5637fe2",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 540,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "80ee2637b03e9214",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 303,
+        "y": 581,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "ebd3378a23d8e3af",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 620,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "d1d2454ab861511c",
+        "type": "change",
+        "z": "f5bda1b0e9e63b8e",
+        "g": "8ffb1744451cd7c5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 303,
+        "y": 661,
+        "wires": [
+            [
+                "fb7d5db3db952487"
+            ]
+        ],
+        "info": "To change the "
+    }
+]

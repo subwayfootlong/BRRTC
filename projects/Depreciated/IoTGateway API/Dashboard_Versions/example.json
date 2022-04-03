@@ -1,0 +1,2452 @@
+{
+  "meta": {
+    "version": "1",
+    "type": "dashboard",
+    "name": "POC 3D Printer Motor 1-Template",
+    "description": "template created from dashboard: POC 3D Printer Motor 1"
+  },
+  "content": {
+    "data": {
+      "type": "dashboard",
+      "attributes": {
+        "name": "POC 3D Printer Motor 1",
+        "description": ""
+      },
+      "relationships": {
+        "label": {
+          "data": [
+            {
+              "type": "label",
+              "id": "091954912f35e000"
+            }
+          ]
+        },
+        "cell": {
+          "data": [
+            {
+              "type": "cell",
+              "id": "09194ba061987000"
+            },
+            {
+              "type": "cell",
+              "id": "09194bb469587000"
+            },
+            {
+              "type": "cell",
+              "id": "09194bc72c987000"
+            },
+            {
+              "type": "cell",
+              "id": "09194bd8e8d87000"
+            },
+            {
+              "type": "cell",
+              "id": "09194c3ca4587000"
+            },
+            {
+              "type": "cell",
+              "id": "09194d3507987000"
+            },
+            {
+              "type": "cell",
+              "id": "09194dbf49187000"
+            },
+            {
+              "type": "cell",
+              "id": "09194dc19c187000"
+            },
+            {
+              "type": "cell",
+              "id": "09194e0ba0987000"
+            },
+            {
+              "type": "cell",
+              "id": "09194e2ff9987000"
+            },
+            {
+              "type": "cell",
+              "id": "09194e765dd87000"
+            },
+            {
+              "type": "cell",
+              "id": "09194e7b5fd87000"
+            },
+            {
+              "type": "cell",
+              "id": "09194e85d4987000"
+            },
+            {
+              "type": "cell",
+              "id": "09194e8768987000"
+            },
+            {
+              "type": "cell",
+              "id": "09194e8918987000"
+            },
+            {
+              "type": "cell",
+              "id": "09194e8aecd87000"
+            },
+            {
+              "type": "cell",
+              "id": "09194f816f187000"
+            },
+            {
+              "type": "cell",
+              "id": "09194f83d9187000"
+            },
+            {
+              "type": "cell",
+              "id": "09194f857b187000"
+            },
+            {
+              "type": "cell",
+              "id": "09194f876f187000"
+            },
+            {
+              "type": "cell",
+              "id": "09194f88ded87000"
+            },
+            {
+              "type": "cell",
+              "id": "09194f8a79187000"
+            },
+            {
+              "type": "cell",
+              "id": "0919516d3fd87000"
+            },
+            {
+              "type": "cell",
+              "id": "091951705bd87000"
+            },
+            {
+              "type": "cell",
+              "id": "09195171e8d87000"
+            },
+            {
+              "type": "cell",
+              "id": "0919517374187000"
+            },
+            {
+              "type": "cell",
+              "id": "091951758e987000"
+            },
+            {
+              "type": "cell",
+              "id": "0919517716187000"
+            }
+          ]
+        },
+        "variable": {
+          "data": []
+        }
+      }
+    },
+    "included": [
+      {
+        "type": "label",
+        "id": "091954912f35e000",
+        "attributes": {
+          "name": "3D Printer",
+          "properties": {
+            "color": "#fafafc",
+            "description": ""
+          }
+        }
+      },
+      {
+        "id": "09194ba061987000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194ba061987000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194bb469587000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 8,
+          "w": 6,
+          "h": 4
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194bb469587000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194bc72c987000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 4,
+          "w": 6,
+          "h": 4
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194bc72c987000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194bd8e8d87000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 12,
+          "w": 6,
+          "h": 4
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194bd8e8d87000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194c3ca4587000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 2,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194c3ca4587000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194d3507987000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 6,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194d3507987000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194dbf49187000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 0,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194dbf49187000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194dc19c187000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 0,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194dc19c187000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194e0ba0987000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 0,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194e0ba0987000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194e2ff9987000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 6,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194e2ff9987000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194e765dd87000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 4,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194e765dd87000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194e7b5fd87000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 6,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194e7b5fd87000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194e85d4987000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 2,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194e85d4987000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194e8768987000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 4,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194e8768987000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194e8918987000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 2,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194e8918987000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194e8aecd87000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 4,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194e8aecd87000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194f816f187000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 8,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194f816f187000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194f83d9187000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 10,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194f83d9187000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194f857b187000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 10,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194f857b187000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194f876f187000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 10,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194f876f187000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194f88ded87000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 8,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194f88ded87000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09194f8a79187000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 8,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09194f8a79187000"
+            }
+          }
+        }
+      },
+      {
+        "id": "0919516d3fd87000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 12,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "0919516d3fd87000"
+            }
+          }
+        }
+      },
+      {
+        "id": "091951705bd87000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 14,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "091951705bd87000"
+            }
+          }
+        }
+      },
+      {
+        "id": "09195171e8d87000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 12,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09195171e8d87000"
+            }
+          }
+        }
+      },
+      {
+        "id": "0919517374187000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 12,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "0919517374187000"
+            }
+          }
+        }
+      },
+      {
+        "id": "091951758e987000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 14,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "091951758e987000"
+            }
+          }
+        }
+      },
+      {
+        "id": "0919517716187000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 14,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "0919517716187000"
+            }
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194ba061987000",
+        "attributes": {
+          "name": "Acceleration X Axis",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000,
+              "widthRatio": 1
+            },
+            "geom": "line",
+            "colors": [
+              {
+                "id": "081dd7fa-40d6-4060-baef-7a5f2847bc0c",
+                "type": "scale",
+                "hex": "#31C0F6",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              },
+              {
+                "id": "047a79b6-4a2b-431c-87d4-3bfdcbeadccf",
+                "type": "scale",
+                "hex": "#A500A5",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              },
+              {
+                "id": "bfd0ae37-cecf-4f79-ac46-9251e4165f39",
+                "type": "scale",
+                "hex": "#FF7E27",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194bb469587000",
+        "attributes": {
+          "name": "Acceleration Y",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000,
+              "widthRatio": 1
+            },
+            "geom": "line",
+            "colors": [
+              {
+                "id": "e9d2e8ca-47e8-41aa-aefe-297998d65132",
+                "type": "scale",
+                "hex": "#DA6FF1",
+                "name": "Ectoplasm",
+                "value": 0
+              },
+              {
+                "id": "993c4a7f-9ebd-4dc9-96e1-280390107b9b",
+                "type": "scale",
+                "hex": "#00717A",
+                "name": "Ectoplasm",
+                "value": 0
+              },
+              {
+                "id": "2b17d40d-2096-48c3-888a-f5e910942dcd",
+                "type": "scale",
+                "hex": "#ACFF76",
+                "name": "Ectoplasm",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194bc72c987000",
+        "attributes": {
+          "name": "Acceleration Y",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000,
+              "widthRatio": 1
+            },
+            "geom": "line",
+            "colors": [
+              {
+                "id": "9ddd3c44-91b1-4e8e-bf04-e832aadbec81",
+                "type": "scale",
+                "hex": "#F6F6F8",
+                "name": "T-Max 400 Film",
+                "value": 0
+              },
+              {
+                "id": "0572328f-625e-4ae5-a8d4-58c4ca9dc966",
+                "type": "scale",
+                "hex": "#A4A8B6",
+                "name": "T-Max 400 Film",
+                "value": 0
+              },
+              {
+                "id": "c30eb0ed-6753-4bb8-b860-4cbdb23bb665",
+                "type": "scale",
+                "hex": "#545667",
+                "name": "T-Max 400 Film",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194bd8e8d87000",
+        "attributes": {
+          "name": "Acceleration Total",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000,
+              "widthRatio": 1
+            },
+            "geom": "line",
+            "colors": [
+              {
+                "id": "98d6cd8d-5f84-4ae3-b564-cfc2f260e1b0",
+                "type": "scale",
+                "hex": "#FFD255",
+                "name": "Solid Yellow",
+                "value": 0
+              },
+              {
+                "id": "9181f2f6-f458-4a3c-bb60-94609a62aa49",
+                "type": "scale",
+                "hex": "#FFD255",
+                "name": "Solid Yellow",
+                "value": 0
+              },
+              {
+                "id": "93ec0944-5905-463a-97c3-b082c11746ab",
+                "type": "scale",
+                "hex": "#FFD255",
+                "name": "Solid Yellow",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194c3ca4587000",
+        "attributes": {
+          "name": "Acceleration X Axis Max (7 Days)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> aggregateWindow(every: 7d, fn: max, createEmpty: false)\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194d3507987000",
+        "attributes": {
+          "name": "Acceleration Y Axis Min (7 Days)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> aggregateWindow(every: 7d, fn: min, createEmpty: false)\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#ffffff",
+                "name": "white",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194dbf49187000",
+        "attributes": {
+          "name": "Acceleration X Axis Max (Daily)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> aggregateWindow(every: 24h, fn: max, createEmpty: false)\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194dc19c187000",
+        "attributes": {
+          "name": "Acceleration X Axis Average (Daily)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> aggregateWindow(every: 24h, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194e0ba0987000",
+        "attributes": {
+          "name": "Acceleration X Axis Min (Daily)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> aggregateWindow(every: 7d, fn: min, createEmpty: false)\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194e2ff9987000",
+        "attributes": {
+          "name": "Acceleration Y Axis Average (7 Days)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> aggregateWindow(every: 7d, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#ffffff",
+                "name": "white",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194e765dd87000",
+        "attributes": {
+          "name": "Acceleration Y Axis Max (Daily)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> aggregateWindow(every: 24h, fn: max, createEmpty: false)\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#ffffff",
+                "name": "white",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194e7b5fd87000",
+        "attributes": {
+          "name": "Acceleration Y Axis Max (7 Days)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> aggregateWindow(every: 7d, fn: max, createEmpty: false)\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#ffffff",
+                "name": "white",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194e85d4987000",
+        "attributes": {
+          "name": "Acceleration X Axis Min (7 Days)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> aggregateWindow(every: 7d, fn: min, createEmpty: false)\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194e8768987000",
+        "attributes": {
+          "name": "Acceleration Y Axis Min (Daily)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> aggregateWindow(every: 7d, fn: min, createEmpty: false)\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#ffffff",
+                "name": "white",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194e8918987000",
+        "attributes": {
+          "name": "Acceleration X Axis Average (7 Days)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> aggregateWindow(every: 7d, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194e8aecd87000",
+        "attributes": {
+          "name": "Acceleration Y Axis Average (Daily)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> aggregateWindow(every: 24h, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#ffffff",
+                "name": "white",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194f816f187000",
+        "attributes": {
+          "name": "Acceleration Z Axis Max (Daily)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> aggregateWindow(every: 24h, fn: max, createEmpty: false)\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#9394FF",
+                "name": "comet",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194f83d9187000",
+        "attributes": {
+          "name": "Acceleration Z Axis Min (7 Days)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> aggregateWindow(every: 7d, fn: min, createEmpty: false)\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#9394FF",
+                "name": "comet",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194f857b187000",
+        "attributes": {
+          "name": "Acceleration Z Axis Average (7 Days)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> aggregateWindow(every: 7d, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#9394FF",
+                "name": "comet",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194f876f187000",
+        "attributes": {
+          "name": "Acceleration Z Axis Max (7 Days)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> aggregateWindow(every: 7d, fn: max, createEmpty: false)\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#9394FF",
+                "name": "comet",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194f88ded87000",
+        "attributes": {
+          "name": "Acceleration Z Axis Min (Daily)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> aggregateWindow(every: 7d, fn: min, createEmpty: false)\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#9394FF",
+                "name": "comet",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09194f8a79187000",
+        "attributes": {
+          "name": "Acceleration Z Axis Average (Daily)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> aggregateWindow(every: 24h, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#9394FF",
+                "name": "comet",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "0919516d3fd87000",
+        "attributes": {
+          "name": "Acceleration Total Axis Max (Daily) (Clone)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> aggregateWindow(every: 24h, fn: max, createEmpty: false)\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#FFD255",
+                "name": "thunder",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "091951705bd87000",
+        "attributes": {
+          "name": "Acceleration Total Axis Max (7 Days)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> aggregateWindow(every: 7d, fn: max, createEmpty: false)\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#FFD255",
+                "name": "thunder",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09195171e8d87000",
+        "attributes": {
+          "name": "Acceleration Total Axis Min (Daily)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> aggregateWindow(every: 7d, fn: min, createEmpty: false)\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#FFD255",
+                "name": "thunder",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "0919517374187000",
+        "attributes": {
+          "name": "Acceleration Total Axis Average (Daily)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\" or r[\"_field\"] == \"std_acc_tot\")\n  |> aggregateWindow(every: 24h, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#FFD255",
+                "name": "thunder",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "091951758e987000",
+        "attributes": {
+          "name": "Acceleration Total Axis Min (7 Days)",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> aggregateWindow(every: 7d, fn: min, createEmpty: false)\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#FFD255",
+                "name": "thunder",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "0919517716187000",
+        "attributes": {
+          "name": "Acceleration Z Axis Average (7 Days) ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"POC 3D Printer\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"Motor Axis 1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> aggregateWindow(every: 7d, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#FFD255",
+                "name": "thunder",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      }
+    ]
+  },
+  "labels": []
+}

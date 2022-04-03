@@ -1,0 +1,76 @@
+[
+    {
+        "id": "7ac25f1b.ba85d8",
+        "type": "tab",
+        "label": "ThingSpeak - http request",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "14e1ab15.248bbd",
+        "type": "debug",
+        "z": "7ac25f1b.ba85d8",
+        "name": "msg",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "b38c6983.4231c",
+        "type": "inject",
+        "z": "7ac25f1b.ba85d8",
+        "name": "ThingSpeak json file",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"api_key\":\"8KF6VKSGUQWNLX05\",\"field1\":56,\"field2\":20}",
+        "payloadType": "json",
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "7853b10f.a9b848"
+            ]
+        ]
+    },
+    {
+        "id": "7853b10f.a9b848",
+        "type": "http request",
+        "z": "7ac25f1b.ba85d8",
+        "name": "http request for ThingSpeak",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "query",
+        "url": "api.thingspeak.com/update.json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 600,
+        "y": 200,
+        "wires": [
+            [
+                "14e1ab15.248bbd"
+            ]
+        ]
+    }
+]

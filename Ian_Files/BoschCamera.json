@@ -1,0 +1,127 @@
+[
+    {
+        "id": "29875cc0.78a92c",
+        "type": "tab",
+        "label": "Bosch Camera",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "1de33745.51b4a1",
+        "type": "inject",
+        "z": "29875cc0.78a92c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload",
+                "v": "",
+                "vt": "date"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "string"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 180,
+        "wires": [
+            [
+                "dbd3c260.091ea"
+            ]
+        ]
+    },
+    {
+        "id": "5981e8c8.60f84",
+        "type": "mqtt in",
+        "z": "29875cc0.78a92c",
+        "name": "",
+        "topic": "bvcd/camera/occupancy",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec7be835.fe0458",
+        "x": 190,
+        "y": 240,
+        "wires": [
+            [
+                "dbd3c260.091ea"
+            ]
+        ]
+    },
+    {
+        "id": "dbd3c260.091ea",
+        "type": "json",
+        "z": "29875cc0.78a92c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 430,
+        "y": 240,
+        "wires": [
+            [
+                "1a9de20b.2cbe66"
+            ]
+        ]
+    },
+    {
+        "id": "1a9de20b.2cbe66",
+        "type": "debug",
+        "z": "29875cc0.78a92c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5d4c04ff.16d5dc",
+        "type": "mqtt in",
+        "z": "29875cc0.78a92c",
+        "name": "",
+        "topic": "bvcd/camera/status/192.168.1.105",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec7be835.fe0458",
+        "x": 220,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ec7be835.fe0458",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    }
+]

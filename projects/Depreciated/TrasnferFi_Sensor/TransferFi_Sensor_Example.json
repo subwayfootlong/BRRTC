@@ -1,0 +1,151 @@
+[
+    {
+        "id": "75768a9aedf787e6",
+        "type": "tab",
+        "label": "TransferFi Sensor Extractor",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ae945a8d7c5a8b80",
+        "type": "mqtt in",
+        "z": "75768a9aedf787e6",
+        "d": true,
+        "name": "",
+        "topic": "TransferFi/SN001-050221/E1:D2:15:10:1F:F1",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "a2c483a0.4f962",
+        "nl": false,
+        "rap": false,
+        "x": 410,
+        "y": 180,
+        "wires": [
+            [
+                "1cf2d23b51d4f973"
+            ]
+        ]
+    },
+    {
+        "id": "9422d4e7ab41ad17",
+        "type": "json",
+        "z": "75768a9aedf787e6",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 830,
+        "y": 180,
+        "wires": [
+            [
+                "78b3939bbff5597b"
+            ]
+        ]
+    },
+    {
+        "id": "1cf2d23b51d4f973",
+        "type": "change",
+        "z": "75768a9aedf787e6",
+        "name": "JSON Validifier",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "'",
+                "fromt": "str",
+                "to": "\"",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 180,
+        "wires": [
+            [
+                "9422d4e7ab41ad17"
+            ]
+        ]
+    },
+    {
+        "id": "78b3939bbff5597b",
+        "type": "debug",
+        "z": "75768a9aedf787e6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "c90f1ae07cca13e1",
+        "type": "change",
+        "z": "75768a9aedf787e6",
+        "name": "Temperature extractor",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.temperature",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "829876a898b80a34",
+        "type": "comment",
+        "z": "75768a9aedf787e6",
+        "name": "Example Extractor",
+        "info": "",
+        "x": 890,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a2c483a0.4f962",
+        "type": "mqtt-broker",
+        "name": "TransferFi",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "clientId-bCOAHMGS79",
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    }
+]

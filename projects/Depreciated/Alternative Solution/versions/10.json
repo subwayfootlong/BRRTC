@@ -1,0 +1,779 @@
+[
+    {
+        "id": "8c947a98.d99ec8",
+        "type": "tab",
+        "label": "Alternative Solution 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7dcbcc4a.db49e4",
+        "type": "group",
+        "z": "8c947a98.d99ec8",
+        "name": "Extracting the values from respective Arrays",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#ffC000",
+            "color": "#000000"
+        },
+        "nodes": [
+            "c97339a.53d08c8",
+            "a721c7ad.52dfd8",
+            "494a1bc6.b029e4",
+            "4dc3c148.03105",
+            "d95685bb.e56448",
+            "3b0ec95f.fc80e6",
+            "6cd8fca.2496804",
+            "d21c41df.ec171",
+            "67275568.86bafc",
+            "7a8c5003.aa474",
+            "e666dd7c.75b4c",
+            "af7bb067.736af",
+            "135b2eb5.7972e1"
+        ],
+        "x": 614,
+        "y": 139,
+        "w": 281,
+        "h": 562
+    },
+    {
+        "id": "f8e14089.8a1f5",
+        "type": "group",
+        "z": "8c947a98.d99ec8",
+        "name": "Pushing data into influxDB",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#9363b7",
+            "color": "#000000"
+        },
+        "nodes": [
+            "6978e306.1c78cc",
+            "13a99905.4d3b17",
+            "ab60a5a3.b864e8",
+            "f3241e97.e7d8d",
+            "3b6ec2c7.193d0e",
+            "517f1533.19db7c",
+            "d5102cf.746f3d",
+            "27ebeef8.63c242",
+            "5e1ca8e9.ee8658",
+            "9c4255cb.ce1c18",
+            "9a7062b0.c38cd",
+            "4885789e.261438",
+            "6d783f7f.ad203"
+        ],
+        "x": 954,
+        "y": 139,
+        "w": 412,
+        "h": 562
+    },
+    {
+        "id": "e50bc6f7.3ebda8",
+        "type": "mqtt in",
+        "z": "8c947a98.d99ec8",
+        "name": "",
+        "topic": "CISS 001",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "e70ea39f.89f6c",
+        "x": 100,
+        "y": 400,
+        "wires": [
+            [
+                "bdecac3a.d952c"
+            ]
+        ]
+    },
+    {
+        "id": "bdecac3a.d952c",
+        "type": "json",
+        "z": "8c947a98.d99ec8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 310,
+        "y": 400,
+        "wires": [
+            [
+                "c97339a.53d08c8",
+                "a721c7ad.52dfd8",
+                "494a1bc6.b029e4",
+                "4dc3c148.03105",
+                "3b0ec95f.fc80e6",
+                "6cd8fca.2496804",
+                "d21c41df.ec171",
+                "67275568.86bafc",
+                "7a8c5003.aa474",
+                "e666dd7c.75b4c",
+                "af7bb067.736af",
+                "135b2eb5.7972e1",
+                "d95685bb.e56448"
+            ]
+        ]
+    },
+    {
+        "id": "c97339a.53d08c8",
+        "type": "change",
+        "z": "8c947a98.d99ec8",
+        "g": "7dcbcc4a.db49e4",
+        "name": "Acceleration_in_X",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[0].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 180,
+        "wires": [
+            [
+                "6978e306.1c78cc"
+            ]
+        ]
+    },
+    {
+        "id": "a721c7ad.52dfd8",
+        "type": "change",
+        "z": "8c947a98.d99ec8",
+        "g": "7dcbcc4a.db49e4",
+        "name": "Acceleration_in_Y",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[1].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 220,
+        "wires": [
+            [
+                "13a99905.4d3b17"
+            ]
+        ]
+    },
+    {
+        "id": "494a1bc6.b029e4",
+        "type": "change",
+        "z": "8c947a98.d99ec8",
+        "g": "7dcbcc4a.db49e4",
+        "name": "Acceleration_in_Z",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[2].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 260,
+        "wires": [
+            [
+                "ab60a5a3.b864e8"
+            ]
+        ]
+    },
+    {
+        "id": "4dc3c148.03105",
+        "type": "change",
+        "z": "8c947a98.d99ec8",
+        "g": "7dcbcc4a.db49e4",
+        "name": "Gyroscope_in_X",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[3].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 300,
+        "wires": [
+            [
+                "f3241e97.e7d8d"
+            ]
+        ]
+    },
+    {
+        "id": "d95685bb.e56448",
+        "type": "change",
+        "z": "8c947a98.d99ec8",
+        "g": "7dcbcc4a.db49e4",
+        "name": "Gyroscope_in_Y",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[4].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 340,
+        "wires": [
+            [
+                "3b6ec2c7.193d0e"
+            ]
+        ]
+    },
+    {
+        "id": "3b0ec95f.fc80e6",
+        "type": "change",
+        "z": "8c947a98.d99ec8",
+        "g": "7dcbcc4a.db49e4",
+        "name": "Gyroscope_in_Z",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[5].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 380,
+        "wires": [
+            [
+                "517f1533.19db7c"
+            ]
+        ]
+    },
+    {
+        "id": "6cd8fca.2496804",
+        "type": "change",
+        "z": "8c947a98.d99ec8",
+        "g": "7dcbcc4a.db49e4",
+        "name": "Humidity",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[6].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 420,
+        "wires": [
+            [
+                "d5102cf.746f3d"
+            ]
+        ]
+    },
+    {
+        "id": "d21c41df.ec171",
+        "type": "change",
+        "z": "8c947a98.d99ec8",
+        "g": "7dcbcc4a.db49e4",
+        "name": "Light",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[7].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 460,
+        "wires": [
+            [
+                "27ebeef8.63c242"
+            ]
+        ]
+    },
+    {
+        "id": "67275568.86bafc",
+        "type": "change",
+        "z": "8c947a98.d99ec8",
+        "g": "7dcbcc4a.db49e4",
+        "name": "Magnetometer_in_X",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[8].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 500,
+        "wires": [
+            [
+                "5e1ca8e9.ee8658"
+            ]
+        ]
+    },
+    {
+        "id": "7a8c5003.aa474",
+        "type": "change",
+        "z": "8c947a98.d99ec8",
+        "g": "7dcbcc4a.db49e4",
+        "name": "Magnetometer_in_Y",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[9].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 540,
+        "wires": [
+            [
+                "9c4255cb.ce1c18"
+            ]
+        ]
+    },
+    {
+        "id": "e666dd7c.75b4c",
+        "type": "change",
+        "z": "8c947a98.d99ec8",
+        "g": "7dcbcc4a.db49e4",
+        "name": "Magnetometer_in_Z",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[10].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 580,
+        "wires": [
+            [
+                "9a7062b0.c38cd"
+            ]
+        ]
+    },
+    {
+        "id": "af7bb067.736af",
+        "type": "change",
+        "z": "8c947a98.d99ec8",
+        "g": "7dcbcc4a.db49e4",
+        "name": "Pressure",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[11].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 620,
+        "wires": [
+            [
+                "4885789e.261438"
+            ]
+        ]
+    },
+    {
+        "id": "135b2eb5.7972e1",
+        "type": "change",
+        "z": "8c947a98.d99ec8",
+        "g": "7dcbcc4a.db49e4",
+        "name": "Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[12].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 660,
+        "wires": [
+            [
+                "6d783f7f.ad203"
+            ]
+        ]
+    },
+    {
+        "id": "6978e306.1c78cc",
+        "type": "influxdb out",
+        "z": "8c947a98.d99ec8",
+        "g": "f8e14089.8a1f5",
+        "influxdb": "45aca520.2e9a4c",
+        "name": "",
+        "measurement": "Acceleration_in_X",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1150,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "13a99905.4d3b17",
+        "type": "influxdb out",
+        "z": "8c947a98.d99ec8",
+        "g": "f8e14089.8a1f5",
+        "influxdb": "45aca520.2e9a4c",
+        "name": "",
+        "measurement": "Acceleration_in_Y",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1150,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "ab60a5a3.b864e8",
+        "type": "influxdb out",
+        "z": "8c947a98.d99ec8",
+        "g": "f8e14089.8a1f5",
+        "influxdb": "45aca520.2e9a4c",
+        "name": "",
+        "measurement": "Acceleration_in_Z",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1150,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "f3241e97.e7d8d",
+        "type": "influxdb out",
+        "z": "8c947a98.d99ec8",
+        "g": "f8e14089.8a1f5",
+        "influxdb": "45aca520.2e9a4c",
+        "name": "",
+        "measurement": "Gyroscope_in_X",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1150,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3b6ec2c7.193d0e",
+        "type": "influxdb out",
+        "z": "8c947a98.d99ec8",
+        "g": "f8e14089.8a1f5",
+        "influxdb": "45aca520.2e9a4c",
+        "name": "",
+        "measurement": "Gyroscope_in_Y",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1150,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "517f1533.19db7c",
+        "type": "influxdb out",
+        "z": "8c947a98.d99ec8",
+        "g": "f8e14089.8a1f5",
+        "influxdb": "45aca520.2e9a4c",
+        "name": "",
+        "measurement": "Gyroscope_in_Z",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1150,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "d5102cf.746f3d",
+        "type": "influxdb out",
+        "z": "8c947a98.d99ec8",
+        "g": "f8e14089.8a1f5",
+        "influxdb": "45aca520.2e9a4c",
+        "name": "",
+        "measurement": "Humidity",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1120,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "27ebeef8.63c242",
+        "type": "influxdb out",
+        "z": "8c947a98.d99ec8",
+        "g": "f8e14089.8a1f5",
+        "influxdb": "45aca520.2e9a4c",
+        "name": "",
+        "measurement": "Light",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1110,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "5e1ca8e9.ee8658",
+        "type": "influxdb out",
+        "z": "8c947a98.d99ec8",
+        "g": "f8e14089.8a1f5",
+        "influxdb": "45aca520.2e9a4c",
+        "name": "",
+        "measurement": "Magnetometer_in_X",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1160,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "9c4255cb.ce1c18",
+        "type": "influxdb out",
+        "z": "8c947a98.d99ec8",
+        "g": "f8e14089.8a1f5",
+        "influxdb": "45aca520.2e9a4c",
+        "name": "",
+        "measurement": "Magnetometer_in_Y",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1160,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "9a7062b0.c38cd",
+        "type": "influxdb out",
+        "z": "8c947a98.d99ec8",
+        "g": "f8e14089.8a1f5",
+        "influxdb": "45aca520.2e9a4c",
+        "name": "",
+        "measurement": "Magnetometer_in_Z",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1160,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "4885789e.261438",
+        "type": "influxdb out",
+        "z": "8c947a98.d99ec8",
+        "g": "f8e14089.8a1f5",
+        "influxdb": "45aca520.2e9a4c",
+        "name": "",
+        "measurement": "Pressure",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1120,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "6d783f7f.ad203",
+        "type": "influxdb out",
+        "z": "8c947a98.d99ec8",
+        "g": "f8e14089.8a1f5",
+        "influxdb": "45aca520.2e9a4c",
+        "name": "",
+        "measurement": "Temperature",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1130,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "e70ea39f.89f6c",
+        "type": "mqtt-broker",
+        "name": "15",
+        "broker": "192.168.1.15",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "45aca520.2e9a4c",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "ciss",
+        "name": "",
+        "usetls": false,
+        "tls": "24883671.9f0932",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "24883671.9f0932",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "BaltimoreCyberTrustRoot.crt.pem",
+        "keyname": "",
+        "caname": "DigiCertGlobalRootCA.crt.pem",
+        "servername": "",
+        "verifyservercert": true
+    }
+]

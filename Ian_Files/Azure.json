@@ -1,0 +1,346 @@
+[
+    {
+        "id": "a5ab0e43.caecb",
+        "type": "tab",
+        "label": "Azure",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "bcdec49.9a90cb8",
+        "type": "OpcUa-Item",
+        "z": "a5ab0e43.caecb",
+        "item": "ns=2;s=Application.GVL_CONST_Konfig_Daten.arBoolOutInject[1]",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Inject 1",
+        "x": 780,
+        "y": 300,
+        "wires": [
+            [
+                "a17a7fca.7611a"
+            ]
+        ]
+    },
+    {
+        "id": "a17a7fca.7611a",
+        "type": "OpcUa-Client",
+        "z": "a5ab0e43.caecb",
+        "endpoint": "b769f87a.ede5d8",
+        "action": "write",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "name": "",
+        "x": 1020,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "893691d5.38a78",
+        "type": "azureiothub",
+        "z": "a5ab0e43.caecb",
+        "name": "Azure IoT Hub",
+        "protocol": "mqtt",
+        "x": 780,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32b81ae5.541c5e",
+        "type": "function",
+        "z": "a5ab0e43.caecb",
+        "name": "",
+        "func": "msg.payload = {\n \"deviceId\": \"iotgateway\",\n \"key\": \"g2sOm6xIgol5iU+EwsAUfX7vE3V+QMnirJebljbyeVs=\",\n \"protocol\": \"mqtt\",\n \"data\": msg.payload\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 580,
+        "y": 180,
+        "wires": [
+            [
+                "893691d5.38a78"
+            ]
+        ]
+    },
+    {
+        "id": "14a9c66a.755772",
+        "type": "inject",
+        "z": "a5ab0e43.caecb",
+        "name": "Sensor 1",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"ZoneId\":\"MG\",\"SensorDecoderId\":\"1\",\"Status\":false}",
+        "payloadType": "json",
+        "x": 300,
+        "y": 120,
+        "wires": [
+            [
+                "32b81ae5.541c5e"
+            ]
+        ]
+    },
+    {
+        "id": "c6ba7468.50a6c8",
+        "type": "inject",
+        "z": "a5ab0e43.caecb",
+        "name": "Sensor 2",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"ZoneId\":\"ST\",\"SensorDecoderId\":\"2\",\"Status\":true}",
+        "payloadType": "json",
+        "x": 300,
+        "y": 180,
+        "wires": [
+            [
+                "32b81ae5.541c5e"
+            ]
+        ]
+    },
+    {
+        "id": "2ea838f8.329d88",
+        "type": "inject",
+        "z": "a5ab0e43.caecb",
+        "name": "Sensor 3",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"ZoneId\":\"CM\",\"SensorDecoderId\":\"3\",\"Status\":true}",
+        "payloadType": "json",
+        "x": 300,
+        "y": 240,
+        "wires": [
+            [
+                "32b81ae5.541c5e"
+            ]
+        ]
+    },
+    {
+        "id": "44224f23.09c77",
+        "type": "azureiothubreceiver",
+        "z": "a5ab0e43.caecb",
+        "name": "Azure IoT Hub Receiver",
+        "x": 220,
+        "y": 360,
+        "wires": [
+            [
+                "fb49a96.bf50fd8"
+            ]
+        ]
+    },
+    {
+        "id": "fb49a96.bf50fd8",
+        "type": "switch",
+        "z": "a5ab0e43.caecb",
+        "name": "",
+        "property": "payload.SensorDecoderId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 430,
+        "y": 360,
+        "wires": [
+            [
+                "dd807f7f.2da298"
+            ],
+            [
+                "5cf3b93b.d9c43"
+            ],
+            [
+                "8f0c8184.699ce"
+            ]
+        ]
+    },
+    {
+        "id": "dd807f7f.2da298",
+        "type": "change",
+        "z": "a5ab0e43.caecb",
+        "name": "Sensor 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Status",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 300,
+        "wires": [
+            [
+                "bcdec49.9a90cb8",
+                "f0d15180.5eada8"
+            ]
+        ]
+    },
+    {
+        "id": "5cf3b93b.d9c43",
+        "type": "change",
+        "z": "a5ab0e43.caecb",
+        "name": "Sensor 2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Status",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 360,
+        "wires": [
+            [
+                "2cc41971.5eab66",
+                "f0d15180.5eada8"
+            ]
+        ]
+    },
+    {
+        "id": "8f0c8184.699ce",
+        "type": "change",
+        "z": "a5ab0e43.caecb",
+        "name": "Sensor 3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Status",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 420,
+        "wires": [
+            [
+                "d8c20fdb.77866",
+                "f0d15180.5eada8"
+            ]
+        ]
+    },
+    {
+        "id": "2cc41971.5eab66",
+        "type": "OpcUa-Item",
+        "z": "a5ab0e43.caecb",
+        "item": "ns=2;s=Application.GVL_CONST_Konfig_Daten.arBoolOutInject[2]",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Inject 2",
+        "x": 780,
+        "y": 360,
+        "wires": [
+            [
+                "a17a7fca.7611a"
+            ]
+        ]
+    },
+    {
+        "id": "d8c20fdb.77866",
+        "type": "OpcUa-Item",
+        "z": "a5ab0e43.caecb",
+        "item": "ns=2;s=Application.GVL_CONST_Konfig_Daten.arBoolOutInject[3]",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Inject 3",
+        "x": 780,
+        "y": 420,
+        "wires": [
+            [
+                "a17a7fca.7611a"
+            ]
+        ]
+    },
+    {
+        "id": "f0d15180.5eada8",
+        "type": "debug",
+        "z": "a5ab0e43.caecb",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "b769f87a.ede5d8",
+        "type": "OpcUa-Endpoint",
+        "z": "",
+        "endpoint": "opc.tcp://192.168.1.109:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "login": false
+    }
+]

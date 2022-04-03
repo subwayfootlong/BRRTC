@@ -1,0 +1,141 @@
+[
+    {
+        "id": "19fae6c032c796db",
+        "type": "tab",
+        "label": "TransferFi New Format to influxdb",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "333bc5a04f4f7965",
+        "type": "debug",
+        "z": "19fae6c032c796db",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "0fabad766e9d84c6",
+        "type": "change",
+        "z": "19fae6c032c796db",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.$.payload\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 300,
+        "wires": [
+            [
+                "7536dcb852387adf",
+                "333bc5a04f4f7965"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "7536dcb852387adf",
+        "type": "influxdb batch",
+        "z": "19fae6c032c796db",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 820,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "fc132adf7c2129d3",
+        "type": "inject",
+        "z": "19fae6c032c796db",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "topic",
+        "payload": "{\"one\":1,\"two\":2}",
+        "payloadType": "json",
+        "x": 200,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5fd736d072143f87",
+        "type": "mqtt in",
+        "z": "19fae6c032c796db",
+        "name": "TransferFi Sensor MQTT",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "a2c483a0.4f962",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 190,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a2c483a0.4f962",
+        "type": "mqtt-broker",
+        "name": "TransferFi HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "clientId-bCOAHMGS79",
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    }
+]

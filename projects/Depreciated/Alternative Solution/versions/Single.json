@@ -1,0 +1,502 @@
+[
+    {
+        "id": "56718d34.a29ef4",
+        "type": "tab",
+        "label": "Alternative Solution Uniformed",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ee6a9de0.37cf8",
+        "type": "group",
+        "z": "56718d34.a29ef4",
+        "name": "Extracting _ measurement \\n Name and Value",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#ffC000",
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "4ba2d756.e9e6b8",
+            "a4f853c0.fb21d",
+            "eed73403.2cb6e8",
+            "8bf81584.22b6b8",
+            "21474c89.af7824",
+            "b1d2ba37.299a18",
+            "a01a7661.7f76f8",
+            "27ea126d.1dc3ce",
+            "ee2804d3.c21e48",
+            "f2f25e76.6d65c"
+        ],
+        "x": 494,
+        "y": 103,
+        "w": 171,
+        "h": 458
+    },
+    {
+        "id": "3a17378.70ddac8",
+        "type": "mqtt in",
+        "z": "56718d34.a29ef4",
+        "name": "",
+        "topic": "CISS 004",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "e70ea39f.89f6c",
+        "nl": false,
+        "rap": false,
+        "x": 100,
+        "y": 320,
+        "wires": [
+            [
+                "efb2c805.02ee18"
+            ]
+        ]
+    },
+    {
+        "id": "efb2c805.02ee18",
+        "type": "json",
+        "z": "56718d34.a29ef4",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 290,
+        "y": 320,
+        "wires": [
+            [
+                "b1d2ba37.299a18",
+                "4ba2d756.e9e6b8",
+                "a4f853c0.fb21d",
+                "eed73403.2cb6e8",
+                "8bf81584.22b6b8",
+                "21474c89.af7824",
+                "a01a7661.7f76f8",
+                "27ea126d.1dc3ce",
+                "ee2804d3.c21e48",
+                "f2f25e76.6d65c"
+            ]
+        ]
+    },
+    {
+        "id": "f0aabc7.23c254",
+        "type": "influxdb out",
+        "z": "56718d34.a29ef4",
+        "influxdb": "33b60c63.bba194",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 900,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "4ba2d756.e9e6b8",
+        "type": "change",
+        "z": "56718d34.a29ef4",
+        "g": "ee6a9de0.37cf8",
+        "name": "0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "payload[0].name",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[0].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 160,
+        "wires": [
+            [
+                "f0aabc7.23c254"
+            ]
+        ]
+    },
+    {
+        "id": "a4f853c0.fb21d",
+        "type": "change",
+        "z": "56718d34.a29ef4",
+        "g": "ee6a9de0.37cf8",
+        "name": "1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "payload[1].name",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[1].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 200,
+        "wires": [
+            [
+                "f0aabc7.23c254"
+            ]
+        ]
+    },
+    {
+        "id": "eed73403.2cb6e8",
+        "type": "change",
+        "z": "56718d34.a29ef4",
+        "g": "ee6a9de0.37cf8",
+        "name": "2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "payload[2].name",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[2].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 240,
+        "wires": [
+            [
+                "f0aabc7.23c254"
+            ]
+        ]
+    },
+    {
+        "id": "8bf81584.22b6b8",
+        "type": "change",
+        "z": "56718d34.a29ef4",
+        "g": "ee6a9de0.37cf8",
+        "name": "3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "payload[3].name",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[3].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 280,
+        "wires": [
+            [
+                "f0aabc7.23c254"
+            ]
+        ]
+    },
+    {
+        "id": "21474c89.af7824",
+        "type": "change",
+        "z": "56718d34.a29ef4",
+        "g": "ee6a9de0.37cf8",
+        "name": "4",
+        "rules": [
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "payload[4].name",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[4].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 320,
+        "wires": [
+            [
+                "f0aabc7.23c254"
+            ]
+        ]
+    },
+    {
+        "id": "b1d2ba37.299a18",
+        "type": "change",
+        "z": "56718d34.a29ef4",
+        "g": "ee6a9de0.37cf8",
+        "name": "5",
+        "rules": [
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "payload[5].name",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[5].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 360,
+        "wires": [
+            [
+                "f0aabc7.23c254"
+            ]
+        ]
+    },
+    {
+        "id": "a01a7661.7f76f8",
+        "type": "change",
+        "z": "56718d34.a29ef4",
+        "g": "ee6a9de0.37cf8",
+        "name": "6",
+        "rules": [
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "payload[6].name",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[6].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 400,
+        "wires": [
+            [
+                "f0aabc7.23c254"
+            ]
+        ]
+    },
+    {
+        "id": "27ea126d.1dc3ce",
+        "type": "change",
+        "z": "56718d34.a29ef4",
+        "g": "ee6a9de0.37cf8",
+        "name": "7",
+        "rules": [
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "payload[7].name",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[7].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 440,
+        "wires": [
+            [
+                "f0aabc7.23c254"
+            ]
+        ]
+    },
+    {
+        "id": "ee2804d3.c21e48",
+        "type": "change",
+        "z": "56718d34.a29ef4",
+        "g": "ee6a9de0.37cf8",
+        "name": "8",
+        "rules": [
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "payload[8].name",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[8].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 480,
+        "wires": [
+            [
+                "f0aabc7.23c254"
+            ]
+        ]
+    },
+    {
+        "id": "f2f25e76.6d65c",
+        "type": "change",
+        "z": "56718d34.a29ef4",
+        "g": "ee6a9de0.37cf8",
+        "name": "9",
+        "rules": [
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "payload[9].name",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[9].values[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 520,
+        "wires": [
+            [
+                "f0aabc7.23c254"
+            ]
+        ]
+    },
+    {
+        "id": "e70ea39f.89f6c",
+        "type": "mqtt-broker",
+        "name": "15",
+        "broker": "192.168.1.15",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "33b60c63.bba194",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "CISS_4",
+        "name": "",
+        "usetls": false,
+        "tls": "24883671.9f0932",
+        "influxdbVersion": "2.0",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "24883671.9f0932",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "BaltimoreCyberTrustRoot.crt.pem",
+        "keyname": "",
+        "caname": "DigiCertGlobalRootCA.crt.pem",
+        "servername": "",
+        "verifyservercert": true
+    }
+]

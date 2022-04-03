@@ -1,0 +1,119 @@
+[
+    {
+        "id": "d5720292.c5433",
+        "type": "tab",
+        "label": "Simtest to ThingSpeak",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "2350884.106c478",
+        "type": "mqtt in",
+        "z": "d5720292.c5433",
+        "name": "",
+        "topic": "simtest",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "b3a646ef.07ca28",
+        "x": 230,
+        "y": 180,
+        "wires": [
+            [
+                "94e147e6.50267"
+            ]
+        ]
+    },
+    {
+        "id": "40f2deac.f7f77",
+        "type": "debug",
+        "z": "d5720292.c5433",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "94e147e6.50267",
+        "type": "json",
+        "z": "d5720292.c5433",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 420,
+        "y": 180,
+        "wires": [
+            [
+                "1ea2cf6d.4c9399"
+            ]
+        ]
+    },
+    {
+        "id": "1ea2cf6d.4c9399",
+        "type": "function",
+        "z": "d5720292.c5433",
+        "name": "",
+        "func": "var simdata = msg.payload[0].values[0].value;\nvar topicfield=\"field3\";\nreturn {payload:simdata,topic:topicfield}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 580,
+        "y": 180,
+        "wires": [
+            [
+                "40f2deac.f7f77",
+                "fe90c93c.68a55"
+            ]
+        ]
+    },
+    {
+        "id": "fe90c93c.68a55",
+        "type": "thingspeak42",
+        "z": "d5720292.c5433",
+        "name": "",
+        "delay": "5",
+        "topic1": "",
+        "topic2": "",
+        "topic3": "field3",
+        "topic4": "",
+        "topic5": "",
+        "topic6": "",
+        "topic7": "",
+        "topic8": "",
+        "endpoint": "https://thingspeak.com/update",
+        "x": 850,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b3a646ef.07ca28",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "IoTGateway",
+        "broker": "192.168.250.50",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    }
+]

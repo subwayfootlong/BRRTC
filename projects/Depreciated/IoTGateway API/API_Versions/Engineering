@@ -1,0 +1,226 @@
+[
+    {
+        "id": "0a0284511e95a6cb",
+        "type": "tab",
+        "label": "IoTGateway API Engineering",
+        "disabled": false,
+        "info": "# This flow enables data to be sent from IoT Gateway to influxDB\n * Just configure the MQTT nodes to your IoT Gateway MQTT output\n * Configure the InfluxDB output to your databse"
+    },
+    {
+        "id": "b7f6376f696862c6",
+        "type": "group",
+        "z": "0a0284511e95a6cb",
+        "name": "Formatter",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#92d04f",
+            "color": "#000000"
+        },
+        "nodes": [
+            "ef0781ff6b8596c0",
+            "b94ab4f2969f4c53"
+        ],
+        "x": 194,
+        "y": 59,
+        "w": 215,
+        "h": 123
+    },
+    {
+        "id": "ef0781ff6b8596c0",
+        "type": "change",
+        "z": "0a0284511e95a6cb",
+        "g": "b7f6376f696862c6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 100,
+        "wires": [
+            [
+                "d889b78fd6d3fbd6"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "d889b78fd6d3fbd6",
+        "type": "influxdb batch",
+        "z": "0a0284511e95a6cb",
+        "influxdb": "33b60c63.bba194",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "Initial_Organization",
+        "bucket": "Testing",
+        "x": 570,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b94ab4f2969f4c53",
+        "type": "change",
+        "z": "0a0284511e95a6cb",
+        "g": "b7f6376f696862c6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload.${$.name: $.values.value}\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 303,
+        "y": 141,
+        "wires": [
+            [
+                "d889b78fd6d3fbd6"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "8d6ba07596dbee3f",
+        "type": "inject",
+        "z": "0a0284511e95a6cb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Machine_1",
+        "payload": "[{\"name\":\"airflow\",\"description\":\"\",\"unit\":\"\",\"values\":[{\"value\":0,\"timestamp\":\"2021-06-09T08:40:46.237Z\"}]},{\"name\":\"current\",\"description\":\"\",\"unit\":\"\",\"values\":[{\"value\":227,\"timestamp\":\"2021-06-09T08:40:46.237Z\"}]}]",
+        "payloadType": "json",
+        "x": 90,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80e99793766d1df8",
+        "type": "mqtt in",
+        "z": "0a0284511e95a6cb",
+        "name": "Input 1",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "a2c483a0.4f962",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 90,
+        "y": 100,
+        "wires": [
+            [
+                "ef0781ff6b8596c0"
+            ]
+        ]
+    },
+    {
+        "id": "82b634e7f79354c9",
+        "type": "mqtt in",
+        "z": "0a0284511e95a6cb",
+        "name": "Input 2",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "a2c483a0.4f962",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "b94ab4f2969f4c53"
+            ]
+        ]
+    },
+    {
+        "id": "33b60c63.bba194",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "CISS_4",
+        "name": "",
+        "usetls": false,
+        "tls": "24883671.9f0932",
+        "influxdbVersion": "2.0",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true,
+        "credentials": {}
+    },
+    {
+        "id": "a2c483a0.4f962",
+        "type": "mqtt-broker",
+        "name": "TransferFi",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "clientId-bCOAHMGS79",
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": "",
+        "credentials": {}
+    },
+    {
+        "id": "24883671.9f0932",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "BaltimoreCyberTrustRoot.crt.pem",
+        "keyname": "",
+        "caname": "DigiCertGlobalRootCA.crt.pem",
+        "servername": "",
+        "verifyservercert": true
+    }
+]
