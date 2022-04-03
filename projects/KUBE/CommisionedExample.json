@@ -1,0 +1,573 @@
+[
+    {
+        "id": "4ea6f7f83a0788ec",
+        "type": "tab",
+        "label": "Kube-Gateway_202",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9c1be2bfffcb9e17",
+        "type": "mqtt in",
+        "z": "4ea6f7f83a0788ec",
+        "name": "",
+        "topic": "Kube-Gateway_202/E5:79:44:36:5E:B2",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "973a7c2600688767",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 400,
+        "wires": [
+            [
+                "a09ecf2bdbd75f01"
+            ]
+        ]
+    },
+    {
+        "id": "93726166e53d1e3e",
+        "type": "mqtt in",
+        "z": "4ea6f7f83a0788ec",
+        "name": "",
+        "topic": "Kube-Gateway_202/EA:86:58:70:DE:7D",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "973a7c2600688767",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "16164c09e0b29a9e",
+        "type": "mqtt in",
+        "z": "4ea6f7f83a0788ec",
+        "name": "",
+        "topic": "Kube-Gateway_202/E3:B4:1D:C7:45:F7",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "973a7c2600688767",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 320,
+        "wires": [
+            [
+                "743a693767df6f2d"
+            ]
+        ]
+    },
+    {
+        "id": "406680041ad40d76",
+        "type": "mqtt in",
+        "z": "4ea6f7f83a0788ec",
+        "name": "",
+        "topic": "Kube-Gateway_202/E7:D0:5A:33:54:29",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "973a7c2600688767",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 440,
+        "wires": [
+            [
+                "6aaf156ed1afb4fe"
+            ]
+        ]
+    },
+    {
+        "id": "24a0d39860dab2c3",
+        "type": "mqtt in",
+        "z": "4ea6f7f83a0788ec",
+        "name": "",
+        "topic": "Kube-Gateway_202/E3:C4:B7:FB:C4:DC",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "973a7c2600688767",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 360,
+        "wires": [
+            [
+                "b0f3ce388af6f541"
+            ]
+        ]
+    },
+    {
+        "id": "ee4f9c602ccadafa",
+        "type": "mqtt in",
+        "z": "4ea6f7f83a0788ec",
+        "name": "",
+        "topic": "Kube-Gateway_202/F3:2D:E4:5F:2C:08",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "973a7c2600688767",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "773ace83ad8a1268",
+        "type": "mqtt in",
+        "z": "4ea6f7f83a0788ec",
+        "name": "",
+        "topic": "Kube-Gateway_202/E2:C6:F8:5E:44:7B",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "973a7c2600688767",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 280,
+        "wires": [
+            [
+                "c97840576546b5d2"
+            ]
+        ]
+    },
+    {
+        "id": "c97840576546b5d2",
+        "type": "change",
+        "z": "4ea6f7f83a0788ec",
+        "name": "Y2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Y2",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 280,
+        "wires": [
+            [
+                "4e19e6eb6437cd12"
+            ]
+        ]
+    },
+    {
+        "id": "743a693767df6f2d",
+        "type": "change",
+        "z": "4ea6f7f83a0788ec",
+        "name": "A",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "A",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 320,
+        "wires": [
+            [
+                "4e19e6eb6437cd12"
+            ]
+        ]
+    },
+    {
+        "id": "b0f3ce388af6f541",
+        "type": "change",
+        "z": "4ea6f7f83a0788ec",
+        "name": "Spindle",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Spindle",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 360,
+        "wires": [
+            [
+                "4e19e6eb6437cd12"
+            ]
+        ]
+    },
+    {
+        "id": "a09ecf2bdbd75f01",
+        "type": "change",
+        "z": "4ea6f7f83a0788ec",
+        "name": "Z",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Z",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 400,
+        "wires": [
+            [
+                "4e19e6eb6437cd12"
+            ]
+        ]
+    },
+    {
+        "id": "6aaf156ed1afb4fe",
+        "type": "change",
+        "z": "4ea6f7f83a0788ec",
+        "name": "C",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "C",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 440,
+        "wires": [
+            [
+                "4e19e6eb6437cd12"
+            ]
+        ]
+    },
+    {
+        "id": "0b4bf9a0e127d319",
+        "type": "mqtt in",
+        "z": "4ea6f7f83a0788ec",
+        "name": "",
+        "topic": "Kube-Gateway_202/E0:48:BE:95:A8:47",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "973a7c2600688767",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 240,
+        "wires": [
+            [
+                "ebff5745052a94cc"
+            ]
+        ]
+    },
+    {
+        "id": "ebff5745052a94cc",
+        "type": "change",
+        "z": "4ea6f7f83a0788ec",
+        "name": "Y1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Y1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [
+                "4e19e6eb6437cd12"
+            ]
+        ]
+    },
+    {
+        "id": "9d41c4ad3dd401a0",
+        "type": "mqtt in",
+        "z": "4ea6f7f83a0788ec",
+        "name": "",
+        "topic": "Kube-Gateway_202/D4:7F:B4:91:F9:ED",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "973a7c2600688767",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "d41a9aaec14de73f"
+            ]
+        ]
+    },
+    {
+        "id": "d41a9aaec14de73f",
+        "type": "change",
+        "z": "4ea6f7f83a0788ec",
+        "name": "W1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "W1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 160,
+        "wires": [
+            [
+                "4e19e6eb6437cd12",
+                "d7d11f35a1ada10f"
+            ]
+        ]
+    },
+    {
+        "id": "5986b0750f33759a",
+        "type": "mqtt in",
+        "z": "4ea6f7f83a0788ec",
+        "name": "",
+        "topic": "Kube-Gateway_202/DB:42:01:E7:DE:CA",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "973a7c2600688767",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 200,
+        "wires": [
+            [
+                "d22063fdbde6653d"
+            ]
+        ]
+    },
+    {
+        "id": "d22063fdbde6653d",
+        "type": "change",
+        "z": "4ea6f7f83a0788ec",
+        "name": "W2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "W2",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 200,
+        "wires": [
+            [
+                "4e19e6eb6437cd12"
+            ]
+        ]
+    },
+    {
+        "id": "44742e0f37175426",
+        "type": "mqtt in",
+        "z": "4ea6f7f83a0788ec",
+        "name": "",
+        "topic": "Kube-Gateway_202/EE:13:4A:3E:AB:72",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "973a7c2600688767",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e0312b1a4a194ac0",
+        "type": "influxdb batch",
+        "z": "4ea6f7f83a0788ec",
+        "influxdb": "53bbf8b1596bc3c5",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "Initial Organization",
+        "bucket": "CNC Machine",
+        "x": 1170,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "fa4dcbcc82e46958",
+        "type": "change",
+        "z": "4ea6f7f83a0788ec",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"measurement\": msg.topic,\t       \"fields\": msg.payload,\t       \"timestamp\": msg.timestamp\t  }\t]         ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 280,
+        "wires": [
+            [
+                "e0312b1a4a194ac0"
+            ]
+        ],
+        "info": "To change the "
+    },
+    {
+        "id": "4e19e6eb6437cd12",
+        "type": "function",
+        "z": "4ea6f7f83a0788ec",
+        "name": "",
+        "func": "const input = msg.payload.time;\nlet t = 0\nconst result = input.replace(/:/g, match => ++t === 3 ? '.' : match)\nconst unixtime = new Date(result).valueOf();\nmsg.payload.timestamp=unixtime;\n\ndelete msg.payload.gw_name\ndelete msg.payload.data_format\ndelete msg.payload.v_ang_1\ndelete msg.payload.v_ang_2\ndelete msg.payload.humidity\ndelete msg.payload.air_pressure\ndelete msg.payload.p2p_mic\ndelete msg.payload.time\nreturn msg;\n//delete msg.payload",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 280,
+        "wires": [
+            [
+                "fa4dcbcc82e46958"
+            ]
+        ]
+    },
+    {
+        "id": "d7d11f35a1ada10f",
+        "type": "debug",
+        "z": "4ea6f7f83a0788ec",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "973a7c2600688767",
+        "type": "mqtt-broker",
+        "name": "KUBE Gateway 202",
+        "broker": "localhost",
+        "port": "1888",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "53bbf8b1596bc3c5",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "database",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    }
+]
