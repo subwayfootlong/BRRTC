@@ -69,6 +69,7 @@ I like to keep the topic name to the Machine part the sensor is located at e.g. 
       | Token | (FROM INFLUXDB) |
       | Organization | Initial_Organization |
       | Bucket | (MachineName) |
+   3. Create a new flow and insert the Aedes broker. You can use the Mosquitto broker snap but I find using that limiting and cumbersome.
       
 ## InfluxDB
    Accessed on localhost:8086
