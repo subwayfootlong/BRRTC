@@ -15,5 +15,4 @@ Replace filter with
 
 ```
 |> filter(fn: (r) => r["_measurement"] == v.measurments)
-  
 ```
