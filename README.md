@@ -11,6 +11,7 @@ Please make sure to update tests as appropriate.
 
 Do not contact me for simple things like "why is this not working?"
 
-Google and ask forums before asking me. I *WILL* start charging upon leaving the company
+Google and ask forums before asking me. I **WILL** start charging upon leaving the company
+
 https://www.linkedin.com/in/lutfi-lais-357391210/
 
