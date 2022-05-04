@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "version": "1",
+    "type": "variable",
+    "name": "buckets-Template",
+    "description": "template created from variable: buckets"
+  },
+  "content": {
+    "data": {
+      "type": "variable",
+      "id": "094f3cd94e332000",
+      "attributes": {
+        "name": "buckets",
+        "arguments": {
+          "type": "query",
+          "values": {
+            "query": "buckets()\r\n  |> filter(fn: (r) => r.name !~ /^_/)\r\n  |> rename(columns: {name: \"_value\"})\r\n  |> keep(columns: [\"_value\"])",
+            "language": "flux"
+          }
+        },
+        "selected": [
+          "Kube Gateway"
+        ]
+      },
+      "relationships": {
+        "variable": {
+          "data": []
+        },
+        "label": {
+          "data": []
+        }
+      }
+    },
+    "included": []
+  },
+  "labels": []
+}
