@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "version": "1",
+    "type": "variable",
+    "name": "measurments-Template",
+    "description": "template created from variable: measurments"
+  },
+  "content": {
+    "data": {
+      "type": "variable",
+      "id": "094f3cf193732000",
+      "attributes": {
+        "name": "measurments",
+        "arguments": {
+          "type": "query",
+          "values": {
+            "query": "import \"influxdata/influxdb/schema\"\r\nschema.measurements(bucket: v.buckets)",
+            "language": "flux"
+          }
+        },
+        "selected": []
+      },
+      "relationships": {
+        "variable": {
+          "data": [
+            {
+              "type": "variable",
+              "id": "094f3cd94e332000"
+            }
+          ]
+        },
+        "label": {
+          "data": []
+        }
+      }
+    },
+    "included": [
+      {
+        "id": "094f3cd94e332000",
+        "type": "variable",
+        "attributes": {
+          "name": "buckets",
+          "arguments": {
+            "type": "query",
+            "values": {
+              "query": "buckets()\r\n  |> filter(fn: (r) => r.name !~ /^_/)\r\n  |> rename(columns: {name: \"_value\"})\r\n  |> keep(columns: [\"_value\"])",
+              "language": "flux"
+            }
+          },
+          "selected": [
+            "Kube Gateway"
+          ]
+        },
+        "relationships": {
+          "label": {
+            "data": []
+          }
+        }
+      }
+    ]
+  },
+  "labels": []
+}
