@@ -1,0 +1,4891 @@
+{
+  "meta": {
+    "version": "1",
+    "type": "dashboard",
+    "name": "Sensor Showcase-Template",
+    "description": "template created from dashboard: Sensor Showcase"
+  },
+  "content": {
+    "data": {
+      "type": "dashboard",
+      "attributes": {
+        "name": "Sensor Showcase",
+        "description": ""
+      },
+      "relationships": {
+        "label": {
+          "data": []
+        },
+        "cell": {
+          "data": [
+            {
+              "type": "cell",
+              "id": "094f3d3e4a20a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f3ea1fa20a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f3ea440a0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f3ea563a0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f40224fa0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4288cc20a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f428bf060a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f43d6b8e0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f45a45a20a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f46520860a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f46860a20a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f46996fa0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f46c10e20a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f492606a0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4a100020a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4a159020a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4a1a1b60a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4a1deaa0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4a215f20a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4a25e020a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4a8e3120a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4a935960a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4a9765a0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4a9b61a0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4a9f31a0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4aa45820a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4d0a5aa0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4d0bdde0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4d0da3e0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4d13ea20a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4d151520a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4d1645a0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4d1f6720a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4d20a4e0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4d21e4e0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4d236560a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4d2479a0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f4d25ea60a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f67720f20a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f6773aaa0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f67754ea0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f677722a0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f6778b060a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f677be2e0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f678446a0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f6785fee0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f67882ee0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f67a418a0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f67a5c720a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f67a7a8e0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f67ae74a0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f67b02320a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f67b1ece0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f67b57760a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f67b770e0a000"
+            },
+            {
+              "type": "cell",
+              "id": "094f67b990a0a000"
+            }
+          ]
+        },
+        "variable": {
+          "data": [
+            {
+              "type": "variable",
+              "id": "094f3cd94e332000"
+            },
+            {
+              "type": "variable",
+              "id": "094f3cf193732000"
+            }
+          ]
+        }
+      }
+    },
+    "included": [
+      {
+        "id": "094f3d3e4a20a000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 20,
+          "w": 6,
+          "h": 4
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f3d3e4a20a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f3ea1fa20a000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f3ea1fa20a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f3ea440a0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 24,
+          "w": 6,
+          "h": 4
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f3ea440a0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f3ea563a0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 16,
+          "w": 6,
+          "h": 4
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f3ea563a0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f40224fa0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 28,
+          "w": 6,
+          "h": 4
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f40224fa0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4288cc20a000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 8,
+          "w": 6,
+          "h": 4
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4288cc20a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f428bf060a000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 4,
+          "w": 6,
+          "h": 4
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f428bf060a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f43d6b8e0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 12,
+          "w": 6,
+          "h": 4
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f43d6b8e0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f45a45a20a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 0,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f45a45a20a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f46520860a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 10,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f46520860a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f46860a20a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 0,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f46860a20a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f46996fa0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 0,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f46996fa0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f46c10e20a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 10,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f46c10e20a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f492606a0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 2,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f492606a0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4a100020a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 4,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4a100020a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4a159020a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 4,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4a159020a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4a1a1b60a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 4,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4a1a1b60a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4a1deaa0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 6,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4a1deaa0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4a215f20a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 2,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4a215f20a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4a25e020a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 2,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4a25e020a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4a8e3120a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 8,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4a8e3120a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4a935960a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 8,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4a935960a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4a9765a0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 8,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4a9765a0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4a9b61a0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 10,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4a9b61a0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4a9f31a0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 6,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4a9f31a0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4aa45820a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 6,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4aa45820a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4d0a5aa0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 12,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4d0a5aa0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4d0bdde0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 12,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4d0bdde0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4d0da3e0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 12,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4d0da3e0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4d13ea20a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 14,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4d13ea20a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4d151520a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 14,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4d151520a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4d1645a0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 14,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4d1645a0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4d1f6720a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 16,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4d1f6720a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4d20a4e0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 16,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4d20a4e0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4d21e4e0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 16,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4d21e4e0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4d236560a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 18,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4d236560a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4d2479a0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 18,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4d2479a0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f4d25ea60a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 18,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f4d25ea60a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f67720f20a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 22,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f67720f20a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f6773aaa0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 22,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f6773aaa0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f67754ea0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 22,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f67754ea0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f677722a0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 20,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f677722a0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f6778b060a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 20,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f6778b060a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f677be2e0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 20,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f677be2e0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f678446a0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 24,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f678446a0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f6785fee0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 24,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f6785fee0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f67882ee0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 24,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f67882ee0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f67a418a0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 26,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f67a418a0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f67a5c720a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 26,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f67a5c720a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f67a7a8e0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 26,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f67a7a8e0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f67ae74a0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 30,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f67ae74a0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f67b02320a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 30,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f67b02320a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f67b1ece0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 30,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f67b1ece0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f67b57760a000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 28,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f67b57760a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f67b770e0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 8,
+          "y": 28,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f67b770e0a000"
+            }
+          }
+        }
+      },
+      {
+        "id": "094f67b990a0a000",
+        "type": "cell",
+        "attributes": {
+          "x": 10,
+          "y": 28,
+          "w": 2,
+          "h": 2
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "094f67b990a0a000"
+            }
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f3d3e4a20a000",
+        "attributes": {
+          "name": "Air Pressure",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000,
+              "widthRatio": 1
+            },
+            "geom": "line",
+            "colors": [
+              {
+                "id": "7d5a7274-7b66-464e-849b-9f95d33e4964",
+                "type": "scale",
+                "hex": "#8F8AF4",
+                "name": "Do Androids Dream of Electric Sheep?",
+                "value": 0
+              },
+              {
+                "id": "d2a1170e-c94f-42fb-b29e-deee4bdc6415",
+                "type": "scale",
+                "hex": "#A51414",
+                "name": "Do Androids Dream of Electric Sheep?",
+                "value": 0
+              },
+              {
+                "id": "cb872b37-45a5-4dab-be06-f80374fcceeb",
+                "type": "scale",
+                "hex": "#F4CF31",
+                "name": "Do Androids Dream of Electric Sheep?",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f3ea1fa20a000",
+        "attributes": {
+          "name": "Acceleration Total",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000,
+              "widthRatio": 1
+            },
+            "geom": "line",
+            "colors": [
+              {
+                "id": "e28cacdd-4a01-4a6f-868d-9e396c1b5710",
+                "type": "scale",
+                "hex": "#34BB55",
+                "name": "Solid Green",
+                "value": 0
+              },
+              {
+                "id": "37dbbad7-e890-4c7c-b181-1d38b3f5a9be",
+                "type": "scale",
+                "hex": "#34BB55",
+                "name": "Solid Green",
+                "value": 0
+              },
+              {
+                "id": "39c71f93-e7ea-4923-9f03-7fe62980eded",
+                "type": "scale",
+                "hex": "#34BB55",
+                "name": "Solid Green",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f3ea440a0a000",
+        "attributes": {
+          "name": "Humidity",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000,
+              "widthRatio": 1
+            },
+            "geom": "line",
+            "colors": [
+              {
+                "id": "1aa6b58f-a627-4661-9a0e-131790733f71",
+                "type": "scale",
+                "hex": "#F6F6F8",
+                "name": "T-Max 400 Film",
+                "value": 0
+              },
+              {
+                "id": "9aef53e9-1b14-42a5-9ad6-3d012aaa6a40",
+                "type": "scale",
+                "hex": "#A4A8B6",
+                "name": "T-Max 400 Film",
+                "value": 0
+              },
+              {
+                "id": "37b3b946-3495-46c2-bec8-6fe86c2dca08",
+                "type": "scale",
+                "hex": "#545667",
+                "name": "T-Max 400 Film",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f3ea563a0a000",
+        "attributes": {
+          "name": "Temperature",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000,
+              "widthRatio": 1
+            },
+            "geom": "line",
+            "colors": [
+              {
+                "id": "051ae360-0f91-4282-8c8e-40fd981f551b",
+                "type": "scale",
+                "hex": "#74D495",
+                "name": "Atlantis",
+                "value": 0
+              },
+              {
+                "id": "e2e1a07b-0749-479d-80ba-227170ff128c",
+                "type": "scale",
+                "hex": "#3F3FBA",
+                "name": "Atlantis",
+                "value": 0
+              },
+              {
+                "id": "8f91da13-a951-402f-8a6e-3e1decbfc50b",
+                "type": "scale",
+                "hex": "#FF4D9E",
+                "name": "Atlantis",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f40224fa0a000",
+        "attributes": {
+          "name": "Sound",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000,
+              "widthRatio": 1
+            },
+            "geom": "line",
+            "colors": [
+              {
+                "id": "7a829945-5532-4a45-8d99-a690c4966bfb",
+                "type": "scale",
+                "hex": "#31C0F6",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              },
+              {
+                "id": "a1ef712f-df77-4182-bad9-3ab3a08f3511",
+                "type": "scale",
+                "hex": "#A500A5",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              },
+              {
+                "id": "1d7680d8-a00e-480a-8945-1d83534c616a",
+                "type": "scale",
+                "hex": "#FF7E27",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4288cc20a000",
+        "attributes": {
+          "name": "Acceleration Y",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000,
+              "widthRatio": 1
+            },
+            "geom": "line",
+            "colors": [
+              {
+                "id": "44447ab8-6e91-4c30-a770-5d7e18d32fb2",
+                "type": "scale",
+                "hex": "#FD7A5D",
+                "name": "Delorean",
+                "value": 0
+              },
+              {
+                "id": "da4f3df0-a6b7-4238-b170-e2c5b980eff1",
+                "type": "scale",
+                "hex": "#5F1CF2",
+                "name": "Delorean",
+                "value": 0
+              },
+              {
+                "id": "ebda14c7-19b3-43dd-b2c4-7096c0672bc4",
+                "type": "scale",
+                "hex": "#4CE09A",
+                "name": "Delorean",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f428bf060a000",
+        "attributes": {
+          "name": "Acceleration X",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000,
+              "widthRatio": 1
+            },
+            "geom": "line",
+            "colors": [
+              {
+                "id": "5d9c5e47-a2e0-43b0-a765-db5270e3ca70",
+                "type": "scale",
+                "hex": "#00A3FF",
+                "name": "Solid Blue",
+                "value": 0
+              },
+              {
+                "id": "394d8f32-b52c-4b97-8d61-3dd70120a810",
+                "type": "scale",
+                "hex": "#00A3FF",
+                "name": "Solid Blue",
+                "value": 0
+              },
+              {
+                "id": "c2bd71f8-b601-4427-ab18-68986207e1ad",
+                "type": "scale",
+                "hex": "#00A3FF",
+                "name": "Solid Blue",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f43d6b8e0a000",
+        "attributes": {
+          "name": "Acceleration Z",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000,
+              "widthRatio": 1
+            },
+            "geom": "line",
+            "colors": [
+              {
+                "id": "9bb2731f-8309-4b5d-b45a-2e443258f450",
+                "type": "scale",
+                "hex": "#FDC44F",
+                "name": "Cthulhu",
+                "value": 0
+              },
+              {
+                "id": "96259d37-e617-4355-ae4d-a6d6451cbcf3",
+                "type": "scale",
+                "hex": "#007C76",
+                "name": "Cthulhu",
+                "value": 0
+              },
+              {
+                "id": "c03aaf8d-c659-4d4b-9df2-3ddf854f8cd8",
+                "type": "scale",
+                "hex": "#8983FF",
+                "name": "Cthulhu",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f45a45a20a000",
+        "attributes": {
+          "name": "Acceleration Total 1d Max",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#4ED8A0",
+                "name": "rainforest",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f46520860a000",
+        "attributes": {
+          "name": "Acceleration Y 7d Mean",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#F95F53",
+                "name": "curacao",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f46860a20a000",
+        "attributes": {
+          "name": "Acceleration Total 1d Mean",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#4ED8A0",
+                "name": "rainforest",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f46996fa0a000",
+        "attributes": {
+          "name": "Acceleration Total 1d Min",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#4ED8A0",
+                "name": "rainforest",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f46c10e20a000",
+        "attributes": {
+          "name": "Acceleration Y 7d Max",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#F95F53",
+                "name": "curacao",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f492606a0a000",
+        "attributes": {
+          "name": "Acceleration Total 7d Min ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#4ED8A0",
+                "name": "rainforest",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4a100020a000",
+        "attributes": {
+          "name": "Acceleration X 1d Min ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4a159020a000",
+        "attributes": {
+          "name": "Acceleration X 1d Max ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4a1a1b60a000",
+        "attributes": {
+          "name": "Acceleration X 1d Mean ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4a1deaa0a000",
+        "attributes": {
+          "name": "Acceleration X 7d Min",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4a215f20a000",
+        "attributes": {
+          "name": "Acceleration Total 7d Max",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#4ED8A0",
+                "name": "rainforest",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4a25e020a000",
+        "attributes": {
+          "name": "Acceleration Total 7d Mean",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#4ED8A0",
+                "name": "rainforest",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4a8e3120a000",
+        "attributes": {
+          "name": "Acceleration Y 1d Min",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#F95F53",
+                "name": "curacao",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4a935960a000",
+        "attributes": {
+          "name": "Acceleration Y 1d Max",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#F95F53",
+                "name": "curacao",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4a9765a0a000",
+        "attributes": {
+          "name": "Acceleration Y 1d Mean ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#F95F53",
+                "name": "curacao",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4a9b61a0a000",
+        "attributes": {
+          "name": "Acceleration Y 7d Min",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#F95F53",
+                "name": "curacao",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4a9f31a0a000",
+        "attributes": {
+          "name": "Acceleration X  7d Max ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4aa45820a000",
+        "attributes": {
+          "name": "Acceleration X 7d Mean ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4d0a5aa0a000",
+        "attributes": {
+          "name": "Acceleration Z 1d Min ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#FFD255",
+                "name": "thunder",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4d0bdde0a000",
+        "attributes": {
+          "name": "Acceleration Z 1d Max ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#FFD255",
+                "name": "thunder",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4d0da3e0a000",
+        "attributes": {
+          "name": "Acceleration Z 1d Mean  ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#FFD255",
+                "name": "thunder",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4d13ea20a000",
+        "attributes": {
+          "name": "Acceleration Z 7d Min",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#FFD255",
+                "name": "thunder",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4d151520a000",
+        "attributes": {
+          "name": "Acceleration Z 7d Max",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#FFD255",
+                "name": "thunder",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4d1645a0a000",
+        "attributes": {
+          "name": "Acceleration Z 7d Mean ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "g",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#FFD255",
+                "name": "thunder",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4d1f6720a000",
+        "attributes": {
+          "name": "Temperature 1d Min ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "°C",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#4ED8A0",
+                "name": "rainforest",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4d20a4e0a000",
+        "attributes": {
+          "name": "Temperature 1d Max",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "°C",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#4ED8A0",
+                "name": "rainforest",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4d21e4e0a000",
+        "attributes": {
+          "name": "Temperature 1d Mean ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "°C",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#4ED8A0",
+                "name": "rainforest",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4d236560a000",
+        "attributes": {
+          "name": "Temperature 7d Min",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "°C",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#4ED8A0",
+                "name": "rainforest",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4d2479a0a000",
+        "attributes": {
+          "name": "Temperature 7d Max ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "°C",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#4ED8A0",
+                "name": "rainforest",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f4d25ea60a000",
+        "attributes": {
+          "name": "Temperature 7d Mean",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "°C",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#4ED8A0",
+                "name": "rainforest",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f67720f20a000",
+        "attributes": {
+          "name": "Temperature 7d Min",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "hPa",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#9394FF",
+                "name": "comet",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f6773aaa0a000",
+        "attributes": {
+          "name": "Temperature 7d Max ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "hPa",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#9394FF",
+                "name": "comet",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f67754ea0a000",
+        "attributes": {
+          "name": "Temperature 7d Mean",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "hPa",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#9394FF",
+                "name": "comet",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f677722a0a000",
+        "attributes": {
+          "name": "Air Pressure 1d Min",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "hPa",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#9394FF",
+                "name": "comet",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f6778b060a000",
+        "attributes": {
+          "name": "Air Pressure 1d Max",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "hPa",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#9394FF",
+                "name": "comet",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f677be2e0a000",
+        "attributes": {
+          "name": "Air Pressure 1d Mean",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "hPa",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#9394FF",
+                "name": "comet",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f678446a0a000",
+        "attributes": {
+          "name": "Humidity 1d Min",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "%",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#ffffff",
+                "name": "white",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f6785fee0a000",
+        "attributes": {
+          "name": "Humidity 1d Max",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "%",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#ffffff",
+                "name": "white",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f67882ee0a000",
+        "attributes": {
+          "name": "Humidity 1d Mean",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "%",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#ffffff",
+                "name": "white",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f67a418a0a000",
+        "attributes": {
+          "name": "Humidity 7d Min",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "%",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#ffffff",
+                "name": "white",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f67a5c720a000",
+        "attributes": {
+          "name": "Humidity 7d Max",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "%",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#ffffff",
+                "name": "white",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f67a7a8e0a000",
+        "attributes": {
+          "name": "Humidity 7d Mean",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n   |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "%",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#ffffff",
+                "name": "white",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f67ae74a0a000",
+        "attributes": {
+          "name": "Sound 7d Min ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "dB",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f67b02320a000",
+        "attributes": {
+          "name": "Sound 7d Max",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "dB",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f67b1ece0a000",
+        "attributes": {
+          "name": "Sound 7d Mean",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "dB",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f67b57760a000",
+        "attributes": {
+          "name": "Sound 1d Min",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> min()\n  |> yield(name: \"min\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "dB",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f67b770e0a000",
+        "attributes": {
+          "name": "Sound 1d Max ",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> max()\n  |> yield(name: \"max\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "dB",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "094f67b990a0a000",
+        "attributes": {
+          "name": "Sound 1d Mean",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": "dB",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "id": "094f3cd94e332000",
+        "type": "variable",
+        "attributes": {
+          "name": "buckets",
+          "arguments": {
+            "type": "query",
+            "values": {
+              "query": "buckets()\r\n  |> filter(fn: (r) => r.name !~ /^_/)\r\n  |> rename(columns: {name: \"_value\"})\r\n  |> keep(columns: [\"_value\"])",
+              "language": "flux"
+            }
+          },
+          "selected": [
+            "Kube Gateway"
+          ]
+        },
+        "relationships": {
+          "label": {
+            "data": []
+          }
+        }
+      },
+      {
+        "id": "094f3cf193732000",
+        "type": "variable",
+        "attributes": {
+          "name": "measurments",
+          "arguments": {
+            "type": "query",
+            "values": {
+              "query": "import \"influxdata/influxdb/schema\"\r\nschema.measurements(bucket: v.buckets)",
+              "language": "flux"
+            }
+          },
+          "selected": []
+        },
+        "relationships": {
+          "label": {
+            "data": []
+          }
+        }
+      }
+    ]
+  },
+  "labels": []
+}
