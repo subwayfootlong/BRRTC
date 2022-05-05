@@ -36,7 +36,7 @@ Follow the [setup guide](https://www.kube-iot.com/support). Its pretty self expl
       | ----------- | ----------- |
       | Server | localhost |
       | Port | 1883 |
-      | Topic | (KUBEGWName)(SensorMacID) |
+      | Topic | (KUBEGWName)/(SensorMacID) |
    2. Change Measurement Name (Change Node)
       Change Sensor 1 to your sensor name. I like to change it to the part I attached the sensor to e.g. Motor X
    3. Variable Deleter (Function Node)
@@ -49,7 +49,7 @@ Follow the [setup guide](https://www.kube-iot.com/support). Its pretty self expl
       | Version | 2.0 |
       | URL | http://localhost:8086 |
       | Token | (FROM INFLUXDB) |
-      | Organization | Initial_Organization |
+      | Organization | Initial Organization |
       | Bucket | (MachineName) |
 
 Create a new flow and insert the Aedes broker. You can use the Mosquitto broker snap but I find using that limiting and cumbersome.      
