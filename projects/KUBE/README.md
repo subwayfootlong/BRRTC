@@ -37,13 +37,13 @@ Follow the [setup guide](https://www.kube-iot.com/support). Its pretty self expl
       | Server | localhost |
       | Port | 1883 |
       | Topic | (KUBEGWName)/(SensorMacID) |
-   2. Change Measurement Name (Change Node)\\
+   2. Change Measurement Name (Change Node)\
       Change Sensor 1 to your sensor name. I like to change it to the part I attached the sensor to e.g. Motor X
-   3. Variable Deleter (Function Node)
+   3. Variable Deleter (Function Node)\
       This node deletes variables that dont need to be stored into influxDB to be efficient
-   4. Formatter (Change Node)
+   4. Formatter (Change Node)\
       DO NOT TOUCH this node unless you know what you are doing
-   6. influxDB Batch
+   6. influxDB Batch\
       | Required Feilds | Inputs |
       | ----------- | ----------- |
       | Version | 2.0 |
