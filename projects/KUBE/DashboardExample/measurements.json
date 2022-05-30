@@ -2,15 +2,15 @@
   "meta": {
     "version": "1",
     "type": "variable",
-    "name": "measurments-Template",
-    "description": "template created from variable: measurments"
+    "name": "measurements-Template",
+    "description": "template created from variable: measurements"
   },
   "content": {
     "data": {
       "type": "variable",
       "id": "094f3cf193732000",
       "attributes": {
-        "name": "measurments",
+        "name": "measurements",
         "arguments": {
           "type": "query",
           "values": {
