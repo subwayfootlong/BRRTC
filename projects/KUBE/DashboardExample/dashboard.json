@@ -1276,7 +1276,7 @@
             "shape": "chronograf-v2",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -1387,7 +1387,7 @@
             "shape": "chronograf-v2",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -1498,7 +1498,7 @@
             "shape": "chronograf-v2",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -1609,7 +1609,7 @@
             "shape": "chronograf-v2",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -1720,7 +1720,7 @@
             "shape": "chronograf-v2",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -1831,7 +1831,7 @@
             "shape": "chronograf-v2",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -1942,7 +1942,7 @@
             "shape": "chronograf-v2",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2053,7 +2053,7 @@
             "shape": "chronograf-v2",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2165,7 +2165,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2221,7 +2221,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2277,7 +2277,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2333,7 +2333,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2389,7 +2389,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2445,7 +2445,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2501,7 +2501,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2557,7 +2557,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2613,7 +2613,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2669,7 +2669,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2725,7 +2725,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2781,7 +2781,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_tot\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2837,7 +2837,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2893,7 +2893,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -2949,7 +2949,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3005,7 +3005,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_y\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3061,7 +3061,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3117,7 +3117,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_x\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3173,7 +3173,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3229,7 +3229,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3285,7 +3285,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3341,7 +3341,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3397,7 +3397,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3453,7 +3453,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"std_acc_z\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3509,7 +3509,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3565,7 +3565,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3621,7 +3621,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3677,7 +3677,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3733,7 +3733,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3789,7 +3789,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"temperature\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3845,7 +3845,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3901,7 +3901,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -3957,7 +3957,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4013,7 +4013,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4069,7 +4069,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4125,7 +4125,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"air_pressure\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4181,7 +4181,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4237,7 +4237,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4293,7 +4293,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4349,7 +4349,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4405,7 +4405,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4461,7 +4461,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n   |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n   |> filter(fn: (r) => r[\"_field\"] == \"humidity\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4517,7 +4517,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4573,7 +4573,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4629,7 +4629,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -7d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4685,7 +4685,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> min()\n  |> yield(name: \"min\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> min()\n  |> yield(name: \"min\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4741,7 +4741,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> max()\n  |> yield(name: \"max\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> max()\n  |> yield(name: \"max\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4797,7 +4797,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurments)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> mean()\n  |> yield(name: \"mean\")",
+                "text": "from(bucket: v.buckets)\n  |> range(start: -1d, stop: now())\n  |> filter(fn: (r) => r[\"_measurement\"] == v.measurements)\n  |> filter(fn: (r) => r[\"_field\"] == \"p2p_mic\")\n  |> mean()\n  |> yield(name: \"mean\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -4869,7 +4869,7 @@
         "id": "094f3cf193732000",
         "type": "variable",
         "attributes": {
-          "name": "measurments",
+          "name": "measurements",
           "arguments": {
             "type": "query",
             "values": {
