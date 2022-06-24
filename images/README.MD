@@ -1,1 +1,1 @@
-Images for BRRTC Grapfana
+Images for BRRTC Grafana
